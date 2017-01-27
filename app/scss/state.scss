@@ -1,0 +1,35 @@
+a{
+  color: #52a1b4;
+}
+a:hover{
+  color: #b22e2f;
+}
+.language-items{
+  li:hover{
+    background: url('../img/flags/flag_hover.png') no-repeat 0 0;
+  }
+  .flag-en{
+
+  }
+  .flag-en-active{
+     background:url('../img/flags/flag_en_active.png') no-repeat 0 0;
+  }
+  .flag-de{
+    background:url('../img/flags/flag_de.png') no-repeat 0 0;
+  }
+  .flag-fr{
+    background:url('../img/flags/flag_fr.png') no-repeat 0 0;
+  }
+  .flag-it{
+    background:url('../img/flags/flag_it.png') no-repeat 0 0;
+  }
+  .flag-ru{
+    background:url('../img/flags/flag_ru.png') no-repeat 0 0;
+  }
+  .flag-es{
+    background:url('../img/flags/flag_es.png') no-repeat 0 0;
+  }
+  .flag-zh{
+    background:url('../img/flags/flag_zh.png') no-repeat 0 0;
+  }
+}

@@ -1,0 +1,108 @@
+//header
+header{
+  position: relative;
+  padding-top: 10px;
+}
+.logo-wrap{
+  width: 350px;
+  margin:0px auto;
+  margin-bottom: 40px;
+  >a{
+    display: block;
+    width:350px;
+    height:75px;
+    img{
+      width:350px;
+      height:75px;
+    }
+  }
+  .language-items{
+    padding:5px 20px 0px 20px;
+    li{
+      display: inline-block;
+      margin-right:18px;
+      a{
+        display: block;
+        width:25px;
+        height:20px;
+      }
+    }
+    li:last-child{
+      margin-right: 0;
+    }
+  }
+}
+.login-form{
+  position: absolute;
+  width:200px;
+  top:30px;
+  right:150px;
+  .form-group{
+    margin-bottom: 5px;
+    label{
+      line-height:26px;
+      font-size:12px;
+      position: absolute;
+      left:-60px;
+    }
+    input{
+      padding:0 5px;
+    }
+  }
+  input[type="submit"]{
+    font-size:12px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    background: #fff;
+  }
+  .forgot{
+    font-size:12px;
+    font-style: italic;
+  }
+  .social{
+    padding-top: 5px;
+    span{
+      font-style: italic;
+      font-size:12px;
+      vertical-align: 7px;
+    }
+    li{
+      display: inline-block;
+      a{
+        margin-left: 5px;
+        display: block;
+        width:26px;
+        height:26px;
+        background-image: url('../img/social-icon.png');
+        background-repeat: no-repeat;
+      }
+      .vk{
+        background-position: 0px 0px;
+      }
+      .fb{
+        background-position: -40px 0px;
+      }
+      .g{
+        background-position: -80px 0px;
+      }
+    }
+  }
+}
+//main page
+.main-page{
+  position: relative;
+  .intro{
+    font-size:20px;
+    margin:0 13%;
+  }
+  .rigistration-link{
+    font-size:27px;
+  }
+  .extra-column{
+    position: absolute;
+    right: 16%;
+    bottom: 10%;
+  }
+}
+

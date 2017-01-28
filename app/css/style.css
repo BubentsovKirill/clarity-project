@@ -377,10 +377,8 @@ html {
 
 body {
   height: 100%;
-  background: #f9f9ea;
-  color: #1b2b32;
   min-width: 960px;
-  font-size: 93%;
+  font-size: 16px;
   line-height: 1.3;
   font-family: Georgia, serif;
   padding: 0px 20px 0px 20px; }
@@ -470,16 +468,18 @@ header {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    background: #fff; }
+    background: #fff;
+    border: 1px solid grey; }
   .login-form .forgot {
     font-size: 12px;
-    font-style: italic; }
+    font-style: italic;
+    vertical-align: bottom; }
   .login-form .social {
     padding-top: 5px; }
     .login-form .social span {
       font-style: italic;
       font-size: 12px;
-      vertical-align: 7px; }
+      vertical-align: 3px; }
     .login-form .social li {
       display: inline-block; }
       .login-form .social li a {
@@ -496,17 +496,58 @@ header {
       .login-form .social li .g {
         background-position: -80px 0px; }
 
-.main-page {
+.content {
   position: relative; }
-  .main-page .intro {
-    font-size: 20px;
-    margin: 0 13%; }
-  .main-page .rigistration-link {
-    font-size: 27px; }
-  .main-page .extra-column {
-    position: absolute;
-    right: 16%;
-    bottom: 10%; }
+  .content .patern {
+    height: 77px;
+    margin-top: 25px;
+    background: url("../img/footer-patern.png") repeat-x; }
+
+.intro {
+  font-size: 20px;
+  margin: 0 13%; }
+
+.rigistration-link {
+  font-size: 27px; }
+
+.extra-column {
+  position: absolute;
+  right: 16%;
+  bottom: 10%; }
+
+.sign-in {
+  margin: 0 0 0 40px; }
+  .sign-in form .incorrect-value {
+    color: red;
+    display: none; }
+  .sign-in form label {
+    font-size: 19px; }
+  .sign-in form input[type="text"],
+  .sign-in form input[type="password"] {
+    width: 200px;
+    margin: 10px 0 20px 0; }
+  .sign-in form input[type="submit"] {
+    font-size: 12px;
+    background: #fff;
+    border: 1px solid grey;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+
+.request {
+  margin: 0 0 0 40px; }
+  .request form label {
+    font-size: 19px; }
+  .request form input[type="email"] {
+    width: 300px;
+    margin: 10px 0 20px 0; }
+  .request form input[type="submit"] {
+    font-size: 12px;
+    background: #fff;
+    border: 1px solid grey;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
 
 a {
   color: #52a1b4; }
@@ -537,3 +578,7 @@ a:hover {
 
 .language-items .flag-zh {
   background: url("../img/flags/flag_zh.png") no-repeat 0 0; }
+
+body {
+  background: #f9f9ea;
+  color: #1b2b32; }

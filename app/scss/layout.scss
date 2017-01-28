@@ -55,17 +55,19 @@ header{
     -moz-border-radius:5px;
     border-radius:5px;
     background: #fff;
+    border: 1px solid grey;
   }
   .forgot{
     font-size:12px;
     font-style: italic;
+    vertical-align: bottom;
   }
   .social{
     padding-top: 5px;
     span{
       font-style: italic;
       font-size:12px;
-      vertical-align: 7px;
+      vertical-align: 3px;
     }
     li{
       display: inline-block;
@@ -89,20 +91,74 @@ header{
     }
   }
 }
-//main page
-.main-page{
+//content
+.content{
   position: relative;
-  .intro{
-    font-size:20px;
-    margin:0 13%;
-  }
-  .rigistration-link{
-    font-size:27px;
-  }
-  .extra-column{
-    position: absolute;
-    right: 16%;
-    bottom: 10%;
+  .patern{
+    height:77px;
+    margin-top: 25px;
+    background: url('../img/footer-patern.png') repeat-x;
   }
 }
+//main-page
+.intro{
+  font-size:20px;
+  margin:0 13%;
+}
+.rigistration-link{
+  font-size:27px;
+}
+.extra-column{
+  position: absolute;
+  right: 16%;
+  bottom: 10%;
+}
+//login
+.sign-in{
+  margin:0 0 0 40px;
+  form{
+    .incorrect-value{
+      color: red;
+      display: none;
+    }
+    label{
+      font-size:19px;
+    }
+    input[type="text"],
+    input[type="password"]{
+      width:200px;
+      margin: 10px 0 20px 0;
+    }
+    input[type="submit"]{
+      font-size:12px;
+      background: #fff;
+      border:1px solid grey;
+      -webkit-border-radius:5px;
+      -moz-border-radius:5px;
+      border-radius:5px;
+    }
+  }
+}
+//request
+.request{
+  margin:0 0 0 40px;
+  form{
+    label{
+      font-size:19px;
+    }
+    input[type="email"]{
+      width:300px;
+      margin: 10px 0 20px 0;
+    }
+    input[type="submit"]{
+      font-size:12px;
+      background: #fff;
+      border:1px solid grey;
+      -webkit-border-radius:5px;
+      -moz-border-radius:5px;
+      border-radius:5px;
+    }
+  }
+}
+
 

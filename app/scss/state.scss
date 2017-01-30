@@ -79,4 +79,16 @@ a:hover{
     color: #fff;
   }
 }
+.nav-mail {
+    .active,.nav-mail-inbox{
+      .nav-mail-decor{
+        background: url("../img/decors.png") no-repeat -143px -125px;
+      }
+    }
+    .nav-mail-sent{
+      .nav-mail-decor{
+        background: url("../img/decors.png") no-repeat -85px -160px;
+      }
+    }
+}
 

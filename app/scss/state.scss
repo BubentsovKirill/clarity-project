@@ -33,3 +33,50 @@ a:hover{
     background:url('../img/flags/flag_zh.png') no-repeat 0 0;
   }
 }
+.nav-top{
+  a{
+    background: url('../img/nav-icons.png') no-repeat;
+  }
+  .nav-top-active{
+    font-weight:800;
+    color: #1b2b32;
+    font-style: italic;
+    text-decoration: none;
+  }
+  .search{
+    background-position: 0px 0px;
+  }
+  .search-active{
+    background-position: 0px -100px;
+    @extend .nav-top-active;
+  }
+  .profile{
+    background-position: -103px 0px;
+  }
+  .profile-active{
+    background-position: -103px -100px;
+    @extend .nav-top-active;
+  }
+  .settings{
+    background-position: -200px 0px;
+  }
+  .settings-active{
+    background-position: -200px -100px;
+    @extend .nav-top-active;
+  }
+  .faqs{
+    background-position: -307px 0px;
+
+  }
+  .faqs-active{
+    background-position: -307px -100px;
+    @extend .nav-top-active;
+  }
+}
+.feedback:hover{
+  a{
+    background: #52a1b4;
+    color: #fff;
+  }
+}
+

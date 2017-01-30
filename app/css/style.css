@@ -925,6 +925,77 @@ header {
     background: #52a1b4;
     text-decoration: none; }
 
+.nav-visitors {
+  margin-bottom: 30px; }
+  .nav-visitors li {
+    display: inline-block;
+    margin-right: 30px;
+    font-style: italic;
+    text-decoration: underline;
+    color: #52a1b4;
+    cursor: pointer; }
+  .nav-visitors li:hover {
+    color: #b32e2f; }
+  .nav-visitors .active {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    font-style: normal; }
+
+.visitor-tab .visitor-tab-item {
+  margin-top: 20px;
+  width: 800px;
+  border: 1px solid black;
+  padding: 10px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px; }
+  .visitor-tab .visitor-tab-item .visitor-user {
+    padding: 20px 0;
+    display: inline-block;
+    width: 33%;
+    text-align: center; }
+    .visitor-tab .visitor-tab-item .visitor-user .visitor-user-avator {
+      margin: 0px auto;
+      background: url("../img/usp_man.gif") no-repeat 0 0;
+      background-size: 100%;
+      display: block;
+      height: 150px;
+      width: 150px;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      margin-bottom: 10px; }
+    .visitor-tab .visitor-tab-item .visitor-user .visitor-user-name,
+    .visitor-tab .visitor-tab-item .visitor-user .visitor-user-info,
+    .visitor-tab .visitor-tab-item .visitor-user .visitor-user-datevisit {
+      font-style: italic;
+      margin: 0; }
+
+.visitor-tab .visitor-tab-item {
+  display: none; }
+
+.visitor-tab .visitor-tab-item.active {
+  display: block; }
+
+.visitor-pagination {
+  margin: 20px 0 20px 20px; }
+  .visitor-pagination li {
+    display: inline-block;
+    font-style: normal !important;
+    font-family: Arial,sans-serif;
+    margin-right: 5px !important; }
+    .visitor-pagination li a {
+      display: block;
+      padding: 4px 5px 3px 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px; }
+    .visitor-pagination li .active {
+      color: #fff;
+      background: #52a1b4;
+      text-decoration: none; }
+
 #overlay {
   z-index: 3;
   position: fixed;

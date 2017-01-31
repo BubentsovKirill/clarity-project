@@ -426,7 +426,7 @@ header{
       border-left: 12px solid #52a1b4;
     }
   }
-  >ul{
+  .nav-bottom{
     margin-top: 50px;
     li{
       font-style: italic;
@@ -593,6 +593,7 @@ header{
 //inbox-pagination
 .inbox-pagination{
   li{
+    display: inline-block;
     font-style: normal !important;
     font-family: Arial,sans-serif;
     margin-right: 5px !important;
@@ -694,6 +695,19 @@ header{
       background:#52a1b4;
       text-decoration: none;
     }
+  }
+}
+//psychology
+.psychology{
+  width:60%;
+  h1{
+    margin-bottom: 50px;
+  }
+
+  li{
+    display: list-item !important;
+    padding-top: 10px;
+    font-weight:normal;
   }
 }
 //modal

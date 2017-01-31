@@ -9,7 +9,7 @@ a:hover{
     background: url('../img/flags/flag_hover.png') no-repeat 0 0;
   }
   .flag-en{
-
+    background:url('../img/flags/flag_en.png') no-repeat 0 0;
   }
   .flag-en-active{
      background:url('../img/flags/flag_en_active.png') no-repeat 0 0;
@@ -17,20 +17,38 @@ a:hover{
   .flag-de{
     background:url('../img/flags/flag_de.png') no-repeat 0 0;
   }
+  .flag-de-active{
+    background:url('../img/flags/flag_de_active.png') no-repeat 0 0;
+  }
   .flag-fr{
     background:url('../img/flags/flag_fr.png') no-repeat 0 0;
+  }
+  .flag-fr-active{
+    background:url('../img/flags/flag_fr_active.png') no-repeat 0 0;
   }
   .flag-it{
     background:url('../img/flags/flag_it.png') no-repeat 0 0;
   }
+  .flag-it-active{
+    background:url('../img/flags/flag_it_active.png') no-repeat 0 0;
+  }
   .flag-ru{
     background:url('../img/flags/flag_ru.png') no-repeat 0 0;
+  }
+  .flag-ru-active{
+    background:url('../img/flags/flag_ru_active.png') no-repeat 0 0;
   }
   .flag-es{
     background:url('../img/flags/flag_es.png') no-repeat 0 0;
   }
+  .flag-es-active{
+    background:url('../img/flags/flag_es_active.png') no-repeat 0 0;
+  }
   .flag-zh{
     background:url('../img/flags/flag_zh.png') no-repeat 0 0;
+  }
+  .flag-zh-active{
+    background:url('../img/flags/flag_zh_active.png') no-repeat 0 0;
   }
 }
 .nav-top{
@@ -80,15 +98,15 @@ a:hover{
   }
 }
 .nav-mail {
-    .active,.nav-mail-inbox{
-      .nav-mail-decor{
-        background: url("../img/decors.png") no-repeat -143px -125px;
-      }
+  .active,.nav-mail-inbox{
+    .nav-mail-decor{
+      background: url("../img/decors.png") no-repeat -143px -125px;
     }
-    .nav-mail-sent{
-      .nav-mail-decor{
-        background: url("../img/decors.png") no-repeat -85px -160px;
-      }
+  }
+  .nav-mail-sent{
+    .nav-mail-decor{
+      background: url("../img/decors.png") no-repeat -85px -160px;
     }
+  }
 }
 

@@ -41,6 +41,13 @@ input,textarea{
 .content-padding{
   padding-bottom: 80px;
 }
+input[type="submit"]{
+  font-size:12px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  background: #fff;
+}
 footer{
   position: absolute;
   width:100%;

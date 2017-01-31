@@ -47,13 +47,6 @@ header{
       padding:0 5px;
     }
   }
-  input[type="submit"]{
-    font-size:12px;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    border-radius:5px;
-    background: #fff;
-  }
   .forgot{
     font-size:12px;
     font-style: italic;
@@ -277,13 +270,6 @@ header{
     input[type="password"]{
       width:200px;
       margin: 10px 0 20px 0;
-    }
-    input[type="submit"]{
-      font-size:12px;
-      background: #fff;
-      -webkit-border-radius:5px;
-      -moz-border-radius:5px;
-      border-radius:5px;
     }
   }
 }
@@ -739,13 +725,6 @@ header{
     display: block;
   }
   form {
-    input[type="submit"]{
-      font-size:12px;
-      -webkit-border-radius:5px;
-      -moz-border-radius:5px;
-      border-radius:5px;
-      background: #fff;
-    }
     label{
       font-style: italic;
     }
@@ -830,13 +809,6 @@ header{
     resize: none;
     height:200px;
     margin-bottom: 10px;
-  }
-  input[type="submit"]{
-    font-size:12px;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    border-radius:5px;
-    background: #fff;
   }
 }
 

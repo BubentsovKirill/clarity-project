@@ -61,6 +61,12 @@ a:hover{
     font-style: italic;
     text-decoration: none;
   }
+  .nav-top-active:hover{
+    font-weight:800;
+    color: #b32e2f;
+    font-style: italic;
+    text-decoration: none;
+  }
   .search{
     background-position: 0px 0px;
   }
@@ -84,7 +90,6 @@ a:hover{
   }
   .faqs{
     background-position: -307px 0px;
-
   }
   .faqs-active{
     background-position: -307px -100px;

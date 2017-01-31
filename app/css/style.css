@@ -409,6 +409,13 @@ input, textarea {
 .content-padding {
   padding-bottom: 80px; }
 
+input[type="submit"] {
+  font-size: 12px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #fff; }
+
 footer {
   position: absolute;
   width: 100%;
@@ -480,12 +487,6 @@ header {
       left: -60px; }
     .login-form .form-group input {
       padding: 0 5px; }
-  .login-form input[type="submit"] {
-    font-size: 12px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    background: #fff; }
   .login-form .forgot {
     font-size: 12px;
     font-style: italic;
@@ -672,12 +673,6 @@ header {
   .sign-in form input[type="password"] {
     width: 200px;
     margin: 10px 0 20px 0; }
-  .sign-in form input[type="submit"] {
-    font-size: 12px;
-    background: #fff;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px; }
 
 .request {
   margin: 0 0 0 40px; }
@@ -1029,13 +1024,6 @@ header {
 .settings .settings-tab-item.active {
   display: block; }
 
-.settings form input[type="submit"] {
-  font-size: 12px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background: #fff; }
-
 .settings form label {
   font-style: italic; }
 
@@ -1111,13 +1099,6 @@ header {
   height: 200px;
   margin-bottom: 10px; }
 
-#modal-support input[type="submit"] {
-  font-size: 12px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background: #fff; }
-
 a {
   color: #52a1b4; }
 
@@ -1175,6 +1156,12 @@ a:hover {
 .nav-top .nav-top-active, .nav-top .search-active, .nav-top .profile-active, .nav-top .settings-active, .nav-top .faqs-active {
   font-weight: 800;
   color: #1b2b32;
+  font-style: italic;
+  text-decoration: none; }
+
+.nav-top .nav-top-active:hover, .nav-top .search-active:hover, .nav-top .profile-active:hover, .nav-top .settings-active:hover, .nav-top .faqs-active:hover {
+  font-weight: 800;
+  color: #b32e2f;
   font-style: italic;
   text-decoration: none; }
 

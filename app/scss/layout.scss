@@ -710,6 +710,64 @@ header{
     font-weight:normal;
   }
 }
+//settings
+.settings{
+  .nav-settings{
+    margin-bottom: 30px;
+    li{
+      display: inline-block;
+      margin-right: 30px;
+      font-style: italic;
+      text-decoration: underline;
+      color: #52a1b4;
+      cursor: pointer;
+    }
+    li:hover{
+      color:#b32e2f;
+    }
+    .active{
+      font-weight:bold;
+      text-decoration: none;
+      color: #000;
+      font-style: normal;
+    }
+  }
+  .settings-tab-item {
+    display: none;
+  }
+  .settings-tab-item.active {
+    display: block;
+  }
+  form {
+    input[type="submit"]{
+      font-size:12px;
+      -webkit-border-radius:5px;
+      -moz-border-radius:5px;
+      border-radius:5px;
+      background: #fff;
+    }
+    label{
+      font-style: italic;
+    }
+    textarea{
+      resize: none;
+      width:530px;
+      height:180px;
+    }
+  }
+  table{
+    td{
+      vertical-align: top;
+      padding-bottom: 30px;
+      span{
+        font-size:10px;
+      }
+    }
+    td:last-child{
+      padding-left: 20px;
+    }
+  }
+}
 //modal
 #overlay{
   z-index:3;

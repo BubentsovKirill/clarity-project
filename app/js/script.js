@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    //modal windows
     var overlay = $('#overlay');
     var open_modal = $('.open-modal');
     var close = $('.modal-close, #overlay');
@@ -25,16 +25,15 @@ $(document).ready(function () {
             );
     });
 
-    $('.nav-visitors').each(function() {
+    //tabs visitors and settings
+    $('.nav-visitors, .nav-settings').each(function() {
         $(this).find('li').each(function(i) {
             $(this).click(function(){
                 $(this).addClass('active').siblings().removeClass('active')
-                    .closest('.visitor-tab').find('.visitor-tab-item').removeClass('active').eq(i).addClass('active');
+                    .closest('.visitor-tab, .settings-tab').find('.visitor-tab-item, .settings-tab-item').removeClass('active').eq(i).addClass('active');
             });
         });
     });
-
-
 });
 
 

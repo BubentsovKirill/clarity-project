@@ -784,19 +784,19 @@ header {
       border: 12px solid transparent;
       border-bottom: 12px solid #52a1b4;
       border-left: 12px solid #52a1b4; }
-  .left-column > ul {
+  .left-column .nav-bottom {
     margin-top: 50px; }
-    .left-column > ul li {
+    .left-column .nav-bottom li {
       font-style: italic;
       display: inline-block;
       margin-right: 25px; }
-      .left-column > ul li a {
+      .left-column .nav-bottom li a {
         font-style: normal; }
-    .left-column > ul .photo-gallery {
+    .left-column .nav-bottom .photo-gallery {
       padding-top: 40px;
       margin-right: 0;
       position: relative; }
-    .left-column > ul .photo-gallery:before {
+    .left-column .nav-bottom .photo-gallery:before {
       content: "";
       top: 10px;
       left: 25px;
@@ -911,6 +911,7 @@ header {
       background: url("../img/icon/basket.png") no-repeat 14px 3px; }
 
 .inbox-pagination li {
+  display: inline-block;
   font-style: normal !important;
   font-family: Arial,sans-serif;
   margin-right: 5px !important; }
@@ -996,6 +997,15 @@ header {
       background: #52a1b4;
       text-decoration: none; }
 
+.psychology {
+  width: 60%; }
+  .psychology h1 {
+    margin-bottom: 50px; }
+  .psychology li {
+    display: list-item !important;
+    padding-top: 10px;
+    font-weight: normal; }
+
 #overlay {
   z-index: 3;
   position: fixed;
@@ -1070,26 +1080,47 @@ a:hover {
 .language-items li:hover {
   background: url("../img/flags/flag_hover.png") no-repeat 0 0; }
 
+.language-items .flag-en {
+  background: url("../img/flags/flag_en.png") no-repeat 0 0; }
+
 .language-items .flag-en-active {
   background: url("../img/flags/flag_en_active.png") no-repeat 0 0; }
 
 .language-items .flag-de {
   background: url("../img/flags/flag_de.png") no-repeat 0 0; }
 
+.language-items .flag-de-active {
+  background: url("../img/flags/flag_de_active.png") no-repeat 0 0; }
+
 .language-items .flag-fr {
   background: url("../img/flags/flag_fr.png") no-repeat 0 0; }
+
+.language-items .flag-fr-active {
+  background: url("../img/flags/flag_fr_active.png") no-repeat 0 0; }
 
 .language-items .flag-it {
   background: url("../img/flags/flag_it.png") no-repeat 0 0; }
 
+.language-items .flag-it-active {
+  background: url("../img/flags/flag_it_active.png") no-repeat 0 0; }
+
 .language-items .flag-ru {
   background: url("../img/flags/flag_ru.png") no-repeat 0 0; }
+
+.language-items .flag-ru-active {
+  background: url("../img/flags/flag_ru_active.png") no-repeat 0 0; }
 
 .language-items .flag-es {
   background: url("../img/flags/flag_es.png") no-repeat 0 0; }
 
+.language-items .flag-es-active {
+  background: url("../img/flags/flag_es_active.png") no-repeat 0 0; }
+
 .language-items .flag-zh {
   background: url("../img/flags/flag_zh.png") no-repeat 0 0; }
+
+.language-items .flag-zh-active {
+  background: url("../img/flags/flag_zh_active.png") no-repeat 0 0; }
 
 .nav-top a {
   background: url("../img/nav-icons.png") no-repeat; }

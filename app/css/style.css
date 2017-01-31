@@ -1006,6 +1006,53 @@ header {
     padding-top: 10px;
     font-weight: normal; }
 
+.settings .nav-settings {
+  margin-bottom: 30px; }
+  .settings .nav-settings li {
+    display: inline-block;
+    margin-right: 30px;
+    font-style: italic;
+    text-decoration: underline;
+    color: #52a1b4;
+    cursor: pointer; }
+  .settings .nav-settings li:hover {
+    color: #b32e2f; }
+  .settings .nav-settings .active {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    font-style: normal; }
+
+.settings .settings-tab-item {
+  display: none; }
+
+.settings .settings-tab-item.active {
+  display: block; }
+
+.settings form input[type="submit"] {
+  font-size: 12px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #fff; }
+
+.settings form label {
+  font-style: italic; }
+
+.settings form textarea {
+  resize: none;
+  width: 530px;
+  height: 180px; }
+
+.settings table td {
+  vertical-align: top;
+  padding-bottom: 30px; }
+  .settings table td span {
+    font-size: 10px; }
+
+.settings table td:last-child {
+  padding-left: 20px; }
+
 #overlay {
   z-index: 3;
   position: fixed;

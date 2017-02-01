@@ -747,6 +747,37 @@ header{
     }
   }
 }
+//seach
+.search{
+  .search-nav{
+    li{
+      display: inline-block;
+      margin-right: 30px;
+    }
+    li:last-child{
+      margin-right: 0;
+    }
+  }
+  .search-form{
+    label{
+      font-style: italic;
+    }
+    padding:20px 20px 10px 20px;
+    margin-top: 30px;
+    width:550px;
+    border:1px solid black;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    table{
+      width:100%;
+      td{
+        text-align: center;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
 //modal
 #overlay{
   z-index:3;

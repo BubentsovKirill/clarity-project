@@ -1039,11 +1039,14 @@ header {
 .settings table td:last-child {
   padding-left: 20px; }
 
-.search .search-nav li {
+.search .nav-search li {
   display: inline-block;
-  margin-right: 30px; }
+  margin-right: 30px;
+  font-style: italic; }
+  .search .nav-search li a {
+    font-style: normal; }
 
-.search .search-nav li:last-child {
+.search .nav-search li:last-child {
   margin-right: 0; }
 
 .search .search-form {
@@ -1062,15 +1065,8 @@ header {
       text-align: center;
       padding-bottom: 20px; }
 
-.member .nav-member {
-  margin-bottom: 30px; }
-  .member .nav-member li {
-    display: inline-block;
-    margin-right: 30px; }
-  .member .nav-member li:last-child {
-    margin-right: 0px; }
-
-.member .member-items {
+.search .member-items,
+.search .matches-items {
   margin-top: 20px;
   width: 800px;
   border: 1px solid black;
@@ -1078,12 +1074,22 @@ header {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px; }
-  .member .member-items .member-item {
+  .search .member-items .member-item,
+  .search .member-items .matches-item,
+  .search .matches-items .member-item,
+  .search .matches-items .matches-item {
     padding: 20px 0;
     display: inline-block;
     width: 33%;
     text-align: center; }
-    .member .member-items .member-item .member-item-avator img {
+    .search .member-items .member-item .member-item-avator img,
+    .search .member-items .member-item .matches-item-avator img,
+    .search .member-items .matches-item .member-item-avator img,
+    .search .member-items .matches-item .matches-item-avator img,
+    .search .matches-items .member-item .member-item-avator img,
+    .search .matches-items .member-item .matches-item-avator img,
+    .search .matches-items .matches-item .member-item-avator img,
+    .search .matches-items .matches-item .matches-item-avator img {
       margin: 0px auto;
       display: block;
       height: 150px;
@@ -1092,9 +1098,30 @@ header {
       -moz-border-radius: 100%;
       border-radius: 100%;
       margin-bottom: 10px; }
-    .member .member-items .member-item .member-item-name,
-    .member .member-items .member-item .member-item-remote,
-    .member .member-items .member-item .member-item-info {
+    .search .member-items .member-item .member-item-name,
+    .search .member-items .member-item .member-item-remote,
+    .search .member-items .member-item .member-item-info,
+    .search .member-items .member-item .matches-item-name,
+    .search .member-items .member-item .matches-item-add,
+    .search .member-items .member-item .matches-item-info,
+    .search .member-items .matches-item .member-item-name,
+    .search .member-items .matches-item .member-item-remote,
+    .search .member-items .matches-item .member-item-info,
+    .search .member-items .matches-item .matches-item-name,
+    .search .member-items .matches-item .matches-item-add,
+    .search .member-items .matches-item .matches-item-info,
+    .search .matches-items .member-item .member-item-name,
+    .search .matches-items .member-item .member-item-remote,
+    .search .matches-items .member-item .member-item-info,
+    .search .matches-items .member-item .matches-item-name,
+    .search .matches-items .member-item .matches-item-add,
+    .search .matches-items .member-item .matches-item-info,
+    .search .matches-items .matches-item .member-item-name,
+    .search .matches-items .matches-item .member-item-remote,
+    .search .matches-items .matches-item .member-item-info,
+    .search .matches-items .matches-item .matches-item-name,
+    .search .matches-items .matches-item .matches-item-add,
+    .search .matches-items .matches-item .matches-item-info {
       font-style: italic;
       margin: 0; }
 

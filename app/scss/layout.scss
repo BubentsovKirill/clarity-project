@@ -748,12 +748,16 @@ header {
   }
 }
 
-//seach
+//search, members, matches
 .search {
-  .search-nav {
+  .nav-search {
     li {
       display: inline-block;
       margin-right: 30px;
+      font-style: italic;
+      a{
+        font-style: normal;
+      }
     }
     li:last-child {
       margin-right: 0;
@@ -778,21 +782,8 @@ header {
       }
     }
   }
-}
-
-//members
-.member {
-  .nav-member {
-    margin-bottom: 30px;
-    li {
-      display: inline-block;
-      margin-right: 30px;
-    }
-    li:last-child {
-      margin-right: 0px;
-    }
-  }
-  .member-items {
+  .member-items,
+  .matches-items {
     margin-top: 20px;
     width: 800px;
     border: 1px solid black;
@@ -800,12 +791,15 @@ header {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
-    .member-item {
+    .member-item,
+    .matches-item {
       padding: 20px 0;
       display: inline-block;
       width: 33%;
       text-align: center;
-      .member-item-avator img {
+      .member-item-avator img,
+      .matches-item-avator img
+      {
         margin: 0px auto;
         display: block;
         height: 150px;
@@ -817,7 +811,11 @@ header {
       }
       .member-item-name,
       .member-item-remote,
-      .member-item-info {
+      .member-item-info,
+      .matches-item-name,
+      .matches-item-add,
+      .matches-item-info
+      {
         font-style: italic;
         margin: 0;
       }

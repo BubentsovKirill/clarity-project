@@ -2,7 +2,7 @@ $(document).ready(function () {
     //modal windows
     var overlay = $('#overlay');
     var open_modal = $('.open-modal');
-    var close = $('.modal-close, #overlay');
+    var close = $('.modal-close, #overlay,.modal-button-close');
     modal = $('.modal-div');
 
     open_modal.click(function (event) {
@@ -35,16 +35,19 @@ $(document).ready(function () {
         });
     });
 
-    //album-add
-    $('#album-add-block form').css('display','none');
-    $('#album-add-block a.album-add').click(function(event){
+    //album-add, photo-add
+    $('#album-add-block form, .add-photo').css('display','none');
+    $('#album-add-block a.album-add, a.add-photo-link').click(function(event){
         event.preventDefault();
-        $('#album-add-block form').show();
+        $('#album-add-block form,.add-photo').show();
     });
-    $('#album-add-block button[title="album-add-cancel"]').click(function(event){
+    $('#album-add-block button[title="album-add-cancel"],.add-photo-cancel').click(function(event){
         event.preventDefault();
-        $('#album-add-block form').hide();
-    })
+        $('#album-add-block form,.add-photo').hide();
+    });
+
+    //colorbox
+    $('a.photo-link').colorbox({rel:'gal'});
 });
 
 

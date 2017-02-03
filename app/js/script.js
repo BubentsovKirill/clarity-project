@@ -34,6 +34,17 @@ $(document).ready(function () {
             });
         });
     });
+
+    //album-add
+    $('#album-add-block form').css('display','none');
+    $('#album-add-block a.album-add').click(function(event){
+        event.preventDefault();
+        $('#album-add-block form').show();
+    });
+    $('#album-add-block button[title="album-add-cancel"]').click(function(event){
+        event.preventDefault();
+        $('#album-add-block form').hide();
+    })
 });
 
 

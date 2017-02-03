@@ -114,4 +114,32 @@ a:hover{
     }
   }
 }
+.photo-gallery {
+  padding-top: 40px;
+  margin-right: 0;
+  position: relative;
+}
+.photo-gallery:before {
+  content: "";
+  top: 10px;
+  left: 25px;
+  width: 40px;
+  position: absolute;
+  height: 24px;
+  background: url(../img/decors.png) no-repeat -80px -100px;
+}
+.photo-gallery-active{
+  padding-top: 40px;
+  margin-right: 0;
+  position: relative;
+}
+.photo-gallery-active:before {
+  content: "";
+  top: 10px;
+  left: 25px;
+  width: 40px;
+  position: absolute;
+  height: 24px;
+  background: url(../img/decors.png) no-repeat -140px -100px;
+}
 

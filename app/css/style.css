@@ -254,7 +254,8 @@ select {
 button,
 html input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+button[title="album-add-cancel"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -409,12 +410,16 @@ input, textarea {
 .content-padding {
   padding-bottom: 80px; }
 
-input[type="submit"] {
+input[type="submit"], button[title="album-add-cancel"] {
   font-size: 12px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   background: #fff; }
+
+button[title="album-add-cancel"] {
+  border: 1px solid #000;
+  font-family: Arial; }
 
 .pagination {
   margin: 20px 0 20px 20px; }
@@ -699,7 +704,7 @@ header {
   .request form input[type="email"] {
     width: 300px;
     margin: 10px 0 20px 0; }
-  .request form input[type="submit"] {
+  .request form input[type="submit"], .request form button[title="album-add-cancel"] {
     font-size: 12px;
     background: #fff;
     -webkit-border-radius: 5px;
@@ -805,18 +810,6 @@ header {
       margin-right: 25px; }
       .left-column .nav-bottom li a {
         font-style: normal; }
-    .left-column .nav-bottom .photo-gallery {
-      padding-top: 40px;
-      margin-right: 0;
-      position: relative; }
-    .left-column .nav-bottom .photo-gallery:before {
-      content: "";
-      top: 10px;
-      left: 25px;
-      width: 40px;
-      position: absolute;
-      height: 24px;
-      background: url(../img/decors.png) no-repeat -80px -100px; }
   .left-column .user-info p:first-child {
     border-top: none; }
   .left-column .user-info p {
@@ -1125,6 +1118,54 @@ header {
       font-style: italic;
       margin: 0; }
 
+.photoalbums {
+  margin-top: 50px;
+  padding: 20px; }
+  .photoalbums ul {
+    width: 100%; }
+    .photoalbums ul .photoalbums-item {
+      margin-bottom: 20px;
+      width: 40%;
+      display: inline-block; }
+      .photoalbums ul .photoalbums-item .album-link {
+        display: block;
+        width: 35%;
+        float: left; }
+        .photoalbums ul .photoalbums-item .album-link .album-img {
+          width: 64px;
+          height: 64px;
+          border: 8px solid #fff;
+          -webkit-box-shadow: 0px 1px 5px 0px #000;
+          -moz-box-shadow: 0px 1px 5px 0px #000;
+          box-shadow: 0px 1px 5px 0px #000; }
+      .photoalbums ul .photoalbums-item .album-add {
+        font-style: italic; }
+      .photoalbums ul .photoalbums-item .album-name {
+        float: left;
+        padding-top: 30px; }
+    .photoalbums ul #album-add-block {
+      position: relative; }
+      .photoalbums ul #album-add-block form {
+        background: #f9f9ea;
+        padding: 20px 20px 0 20px;
+        top: 0;
+        left: 90px;
+        position: absolute;
+        width: 330px;
+        border: 1px solid #000;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px; }
+        .photoalbums ul #album-add-block form table {
+          width: 100%; }
+          .photoalbums ul #album-add-block form table tr td {
+            padding-bottom: 20px !important;
+            text-align: left; }
+            .photoalbums ul #album-add-block form table tr td input {
+              width: 100%; }
+            .photoalbums ul #album-add-block form table tr td input[type="submit"], .photoalbums ul #album-add-block form table tr td button[title="album-add-cancel"] {
+              width: inherit; }
+
 #overlay {
   z-index: 3;
   position: fixed;
@@ -1166,7 +1207,7 @@ header {
   #modal-status input[type="text"], #modal-support input[type="text"] {
     width: 100%;
     margin-bottom: 20px; }
-  #modal-status input[type="submit"], #modal-support input[type="submit"] {
+  #modal-status input[type="submit"], #modal-support input[type="submit"], #modal-status button[title="album-add-cancel"], #modal-support button[title="album-add-cancel"] {
     font-size: 12px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -1282,6 +1323,34 @@ a:hover {
 
 .nav-mail .nav-mail-sent .nav-mail-decor {
   background: url("../img/decors.png") no-repeat -85px -160px; }
+
+.photo-gallery {
+  padding-top: 40px;
+  margin-right: 0;
+  position: relative; }
+
+.photo-gallery:before {
+  content: "";
+  top: 10px;
+  left: 25px;
+  width: 40px;
+  position: absolute;
+  height: 24px;
+  background: url(../img/decors.png) no-repeat -80px -100px; }
+
+.photo-gallery-active {
+  padding-top: 40px;
+  margin-right: 0;
+  position: relative; }
+
+.photo-gallery-active:before {
+  content: "";
+  top: 10px;
+  left: 25px;
+  width: 40px;
+  position: absolute;
+  height: 24px;
+  background: url(../img/decors.png) no-repeat -140px -100px; }
 
 body {
   background: #f9f9ea;

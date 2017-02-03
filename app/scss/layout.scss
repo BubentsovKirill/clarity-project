@@ -429,7 +429,7 @@ header {
     }
   }
   .nav-bottom {
-    margin-top: 50px;
+    margin-top: 30px;
     li {
       font-style: italic;
       display: inline-block;
@@ -641,7 +641,7 @@ header {
         display: inline-block;
         width: 33%;
         text-align: center;
-        .visitor-user-avator img{
+        .visitor-user-avator img {
           margin: 0px auto;
           display: block;
           height: 150px;
@@ -741,7 +741,7 @@ header {
       display: inline-block;
       margin-right: 30px;
       font-style: italic;
-      a{
+      a {
         font-style: normal;
       }
     }
@@ -784,8 +784,7 @@ header {
       width: 33%;
       text-align: center;
       .member-item-avator img,
-      .matches-item-avator img
-      {
+      .matches-item-avator img {
         margin: 0px auto;
         display: block;
         height: 150px;
@@ -800,70 +799,69 @@ header {
       .member-item-info,
       .matches-item-name,
       .matches-item-add,
-      .matches-item-info
-      {
+      .matches-item-info {
         font-style: italic;
         margin: 0;
       }
     }
   }
 }
+
 //photoalbums
-  .photoalbums{
-    margin-top: 50px;
-    padding:20px;
-    ul{
-      width:100%;
-      .photoalbums-item{
-        margin-bottom: 20px;
-        width:40%;
-        display: inline-block;
-        .album-link{
-          display: block;
-          width:35%;
-          float: left;
-          .album-img{
-            width:64px;
-            height:64px;
-            border:8px solid #fff;
-            -webkit-box-shadow: 0px 1px 5px 0px #000;
-            -moz-box-shadow: 0px 1px 5px 0px #000;
-            box-shadow: 0px 1px 5px 0px #000;
-          }
-        }
-        .album-add{
-          font-style: italic;
-        }
-        .album-name{
-          float: left;
-          padding-top: 30px ;
+.photoalbums {
+  margin-top: 50px;
+  padding: 20px;
+  ul {
+    width: 100%;
+    .photoalbums-item {
+      margin-bottom: 20px;
+      width: 40%;
+      display: inline-block;
+      .album-link {
+        display: block;
+        width: 35%;
+        float: left;
+        .album-img {
+          width: 64px;
+          height: 64px;
+          border: 8px solid #fff;
+          -webkit-box-shadow: 0px 1px 5px 0px #000;
+          -moz-box-shadow: 0px 1px 5px 0px #000;
+          box-shadow: 0px 1px 5px 0px #000;
         }
       }
-      #album-add-block{
-        position: relative;
-        form{
-          background: #f9f9ea;
-          padding: 20px 20px 0 20px;
-          top:0;
-          left:90px;
-          position: absolute;
-          width:330px;
-          border:1px solid #000;
-          -webkit-border-radius:8px;
-          -moz-border-radius:8px;
-          border-radius:8px;
-          table{
-            width:100%;
-            tr{
-              td{
-                padding-bottom: 20px !important;
-                text-align:left;
-                input{
-                  width:100%;
-                }
-                input[type="submit"]{
-                  width:inherit;
-                }
+      .album-add {
+        font-style: italic;
+      }
+      .album-name {
+        float: left;
+        padding-top: 30px;
+      }
+    }
+    #album-add-block {
+      position: relative;
+      form {
+        background: #f9f9ea;
+        padding: 20px 20px 0 20px;
+        top: 0;
+        left: 90px;
+        position: absolute;
+        width: 330px;
+        border: 1px solid #000;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        table {
+          width: 100%;
+          tr {
+            td {
+              padding-bottom: 20px !important;
+              text-align: left;
+              input {
+                width: 100%;
+              }
+              input[type="submit"] {
+                width: inherit;
               }
             }
           }
@@ -871,6 +869,73 @@ header {
       }
     }
   }
+}
+
+//photoalbum
+.link-back {
+  margin-top: 50px;
+}
+
+.album-nav {
+  margin-top: 20px;
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+.add-photo{
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  width:350px;
+  border:1px solid #000;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+
+  td{
+    padding:10px;
+  }
+  td:last-child{
+    padding-right: 0;
+  }
+}
+.photo-items{
+  .photo-item{
+    position: relative;
+    display: inline-block;
+    margin-right: 45px;
+    margin-top: 40px;
+    .photo-link{
+      padding:8px;
+      background: #fff;
+      display: block;
+      background: #fff;
+      img{
+        display: block;
+        width:98px;
+        height:98px;
+      }
+    }
+    .photo-delete{
+      position: absolute;
+      width:28px;
+      height:28px;
+      top:-17px;
+      right:-17px;
+      background: url('../img/close.png') no-repeat;
+    }
+    .photo-edit{
+      position: absolute;
+      width:28px;
+      height:28px;
+      top:25px;
+      right:-17px;
+      background: url('../img/album_photo_edit.png') no-repeat;
+    }
+  }
+}
+
 //modal
 #overlay {
   z-index: 3;
@@ -889,13 +954,11 @@ header {
 
 .modal-close {
   position: absolute;
-  width: 28px;
-  height: 28px;
-  top: 15px;
+  width:28px;
+  height:28px;
   background: url('../img/close.png') no-repeat;
-  right: 15px;
-  cursor: pointer;
-  display: block;
+  top:15px;
+  right:15px;
 }
 
 #modal-status {
@@ -937,5 +1000,17 @@ header {
     height: 200px;
     margin-bottom: 10px;
   }
+}
+
+#modal-photo-delete {
+  @extend #modal-status;
+}
+
+#modal-photo-edit {
+  @extend #modal-status;
+}
+
+#modal-album-delete {
+  @extend #modal-status;
 }
 

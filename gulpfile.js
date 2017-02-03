@@ -28,7 +28,8 @@ gulp.task('css',['scss'], function(){
 
 gulp.task('js',function(){
     return gulp.src(['app/libs/jquery/dist/jquery.js',
-    'app/js/script.js'])
+        'app/libs/jquery-colorbox/jquery.colorbox.js',
+        'app/js/script.js'])
         .pipe(concat('script.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('tmp/js'))

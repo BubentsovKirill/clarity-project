@@ -10,11 +10,13 @@
 </head>
 <body>
     <div class="wrapper">
-        <header>
+        <header class="main-page">
             <div class="logo-wrap">
-                <a href="#">
-                    <img src="#" alt="dating.clarity-project.net" width="350px" height="75px">
-                </a>
+                <div class="logo">
+                    <a href="#">
+                        <img src="#" alt="dating.clarity-project.net" width="350" height="75">
+                    </a>
+                </div>
                 <ul class="language-items">
                     <li><a href="#" class="flag-en-active"></a></li>
                     <li><a href="#" class="flag-de"></a></li>
@@ -25,27 +27,29 @@
                     <li><a href="#" class="flag-zh"></a></li>
                 </ul>
             </div>
-            <form class="login-form" action="">
-                <div class="form-group">
-                    <label for="login">Login</label>
-                    <input type="text" id="login" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="text" id="password" required>
-                </div>
-                <input type="submit" value="Sign in">
-                <a href="#" class="forgot">Forgot your password?</a>
-                <ul class="social">
-                    <li>
-                        <span>Registration with</span>
-                    </li>
-                    <li><a href="#" class="vk"></a></li>
-                    <li><a href="#" class="fb"></a></li>
-                    <li><a href="#" class="g"></a></li>
+            <div class="right-column">
+                <form class="login-form" action="">
+                    <div class="form-group">
+                        <label for="login">Login</label>
+                        <input type="text" id="login" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="text" id="password" required>
+                    </div>
+                    <input type="submit" value="Sign in">
+                    <a href="#" class="forgot">Forgot your password?</a>
+                    <ul class="social">
+                        <li>
+                            <span>Registration with </span>
+                        </li>
+                        <li><a href="#" class="vk"></a></li>
+                        <li><a href="#" class="fb"></a></li>
+                        <li><a href="#" class="g"></a></li>
 
-                </ul>
-            </form>
+                    </ul>
+                </form>
+            </div>
         </header>
         <div class="line"></div>
         <div class="content content-padding">
@@ -57,12 +61,12 @@
                 offer the services of professional translators who help the lovers to understand each other
                 without any problems. Meet here, talk and be happy together!
             </p>
-            <p class="text-center">
+            <div class="heart">
                 <img class="" src="img/heart-form.png" alt="heart-form">
-            </p>
-            <p class="text-center">
-                <a class="rigistration-link" href="#">Registration</a>
-            </p>
+                <p class="text-center">
+                    <a class="rigistration-link" href="#">Registration</a>
+                </p>
+            </div>
             <div class="extra-column">
                 <a href="#">
                     <img src="img/welcome-screenshot.png" alt="welcome">

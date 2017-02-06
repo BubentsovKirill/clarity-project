@@ -11,10 +11,35 @@
 <body>
 <div class="wrapper">
     <header>
+        <nav class="nav-top">
+            <ul>
+                <li>
+                    <a href="search.html">Search
+                        <span class="search"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile-man.html" class="active">Profile
+                        <span class="profile-active"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">Settings
+                        <span class="settings"></span>
+                    </a>
+                </li>
+                <li><a href="faq.html">FAQs
+                    <span class="faqs"></span>
+                </a>
+                </li>
+            </ul>
+        </nav>
         <div class="logo-wrap">
-            <a href="#">
-                <img src="#" alt="dating.clarity-project.net" width="200px" height="40px">
-            </a>
+            <div class="logo">
+                <a href="#">
+                    <img src="#" alt="dating.clarity-project.net" width="200" height="40">
+                </a>
+            </div>
             <ul class="language-items">
                 <li><a href="#" class="flag-en-active"></a></li>
                 <li><a href="#" class="flag-de"></a></li>
@@ -25,14 +50,22 @@
                 <li><a href="#" class="flag-zh"></a></li>
             </ul>
         </div>
-        <nav class="nav-top">
-            <ul>
-                <li><a href="#" class="search">Search</a></li>
-                <li><a href="#" class="profile-active">Profile</a></li>
-                <li><a href="#" class="settings">Settings</a></li>
-                <li><a href="#" class="faqs">FAQs</a></li>
-            </ul>
-        </nav>
+        <div class="user-link">
+            <div class="link-padding">
+                <span class="decor"></span>
+                <a href="#" class="link-avator">
+                    <img src="img/usp_man.gif" alt="" height="35" width="35">
+                </a>
+                <p>Didier
+                    ( <a href="#"><i>Log out</i></a> )
+                </p>
+                <p>Active Member status till — 07/04/2017</p>
+                <p><a href="psychology.html"><i>Psychological portrait</i></a></p>
+            </div>
+            <div class="status">
+                <span>Loremdasdasdassdf sdf sdf sdsdf sdf asd a</span>
+            </div>
+        </div>
         <div class="message-info">
             <table>
                 <tr>
@@ -45,171 +78,164 @@
                 </tr>
             </table>
         </div>
-        <div class="user-link">
-            <div class="decor-crown-woman"></div>
-            <a href="#" class="profile-img-woman"></a>
-            <p>Men-For-You ( <a href="#">Log out</a> )</p>
-            <p>Active Member status till — 07/04/2017</p>
-            <a href="#">Psychological portrait</a>
-        </div>
-        <div class="user-status">
-            <span>Lorem ipsum dolpasdasdad sd dsjsjhfjkasfa f sfkjha sfha sfas faksfh asdfsdfsdfsdfsdfsdfsdf f sdf sdfs df sdf sdf sdfs fskf askf asf askfa skf sa!</span>
-        </div>
     </header>
     <div class="line"></div>
     <div class="content content-padding">
         <div class="left-column my-mail">
-            <h1>My mail</h1>
-            <nav class="nav-profile">
-                <ul>
-                    <li><a href="#">My page</a></li>
-                    <li class="active">My mail<span> (10)</span></li>
-                    <li><a href="#">My visitors</a></li>
-                    <li><a href="">Favorite</a> (10)</li>
+            <div class="left-column-wrap">
+                <h1>My mail</h1>
+                <nav class="nav-profile">
+                    <ul>
+                        <li><a href="profile-man.html">My page</a></li>
+                        <li class="active">My mail<span> (10)</span></li>
+                        <li><a href="visitors.html">My visitors</a></li>
+                        <li><a href="">Favorite</a> (10)</li>
+                    </ul>
+                </nav>
+                <nav class="nav-mail">
+                    <ul>
+                        <li class="nav-mail-inbox">
+                            <div class="nav-mail-decor"></div>
+                            <b>Inbox</b><span> (10)</span>
+                        </li>
+                        <li class="nav-mail-sent">
+                            <div class="nav-mail-decor"></div>
+                            <a href="#">Sent</a><span> (10)</span>
+                        </li>
+                        <li class="nav-mail-system">
+                            <div class="nav-mail-decor"></div>
+                            <a href="#">System messages</a><span> (10)</span>
+                        </li>
+                    </ul>
+                </nav>
+                <table class="inbox-list">
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#">profile-user-3</a></td>
+                        <td>№611412, 03 november 2016 at 23:15</td>
+                        <td>New !</td>
+                        <td><div>Being translated...</div></td>
+                        <td><a href="#" style="display: none;">Open</a></td>
+                        <td><a href="#">History</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#">Kirill</a></td>
+                        <td>№611412, 03 november 2016 at 23:15</td>
+                        <td>New !</td>
+                        <td><div>Translation ready!</div></td>
+                        <td><a href="#">Open</a></td>
+                        <td><a href="#">History</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#">Petr</a></td>
+                        <td>№611412, 03 november 2016 at 23:15</td>
+                        <td>New !</td>
+                        <td><div>Translation ready!</div></td>
+                        <td><a href="#">Open</a></td>
+                        <td><a href="#">History</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#">Batman</a></td>
+                        <td>№611412, 03 may 2016 at 23:15</td>
+                        <td>New !</td>
+                        <td><div>Being translated...</div></td>
+                        <td><a href="#">Open</a></td>
+                        <td><a href="#">History</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#">SpiderMan</a></td>
+                        <td>№611412, 03 december 2016 at 23:15</td>
+                        <td>New !</td>
+                        <td><div>Translation ready!</div></td>
+                        <td><a href="#">Open</a></td>
+                        <td><a href="#">History</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#">Donald Duck</a></td>
+                        <td>№611412, 03 october 2016 at 23:15</td>
+                        <td>New !</td>
+                        <td><div>Being translated...</div></td>
+                        <td><a href="#" style="display: none;">Open</a></td>
+                        <td><a href="#">History</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#">GulDan</a></td>
+                        <td>№611412, 03 october 2016 at 23:15</td>
+                        <td>New !</td>
+                        <td><div>Translation ready!</div></td>
+                        <td><a href="#">Open</a></td>
+                        <td><a href="#">History</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#">Donald Duck</a></td>
+                        <td>№611412, 03 october 2016 at 23:15</td>
+                        <td>New !</td>
+                        <td><div>Being translated...</div></td>
+                        <td><a href="#" style="display: none;">Open</a></td>
+                        <td><a href="#">History</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#">Storm</a></td>
+                        <td>№611412, 03 october 2016 at 23:15</td>
+                        <td>New !</td>
+                        <td><div>Translation ready!</div></td>
+                        <td><a href="#">Open</a></td>
+                        <td><a href="#">History</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#">halk</a></td>
+                        <td>№611412, 03 october 2016 at 23:15</td>
+                        <td>New !</td>
+                        <td><div>Translation ready!</div></td>
+                        <td><a href="#">Open</a></td>
+                        <td><a href="#">History</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="#">Donald Duck</a></td>
+                        <td>№611412, 03 october 2016 at 23:15</td>
+                        <td>New !</td>
+                        <td><div>Translation ready!</div></td>
+                        <td><a href="#">Open</a></td>
+                        <td><a href="#">History</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                </table>
+                <ul class="inbox-pagination">
+                    <li>Pages:</li>
+                    <li style="display: none;"><a href="#">First</a></li>
+                    <li style="display: none;"><a href="#">Previous </a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">Next</a></li>
+                    <li><a href="#">Last</a></li>
                 </ul>
-            </nav>
-            <nav class="nav-mail">
-                <ul>
-                    <li class="active nav-mail-inbox">
-                        <div class="nav-mail-decor"></div>
-                        Inbox<span> (10)</span>
-                    </li>
-                    <li class="nav-mail-sent">
-                        <div class="nav-mail-decor"></div>
-                        <a href="#">Sent</a><span> (10)</span>
-                    </li>
-                    <li class="nav-mail-delete">
-                        <a href="#">Delete</a><span> (10)</span>
-                    </li>
-                </ul>
-            </nav>
-            <table class="inbox-list">
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td><a href="#">profile-user-user-user-3</a></td>
-                    <td>№611412, 03 november 2016 at 23:15</td>
-                    <td>New !</td>
-                    <td><div>Being translated...</div></td>
-                    <td><a href="#" style="display: none;">Open</a></td>
-                    <td><a href="#">History</a></td>
-                    <td><a href="#">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td><a href="#">Kirill</a></td>
-                    <td>№611412, 03 november 2016 at 23:15</td>
-                    <td>New !</td>
-                    <td><div>Translation ready!</div></td>
-                    <td><a href="#">Open</a></td>
-                    <td><a href="#">History</a></td>
-                    <td><a href="#">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td><a href="#">Petr</a></td>
-                    <td>№611412, 03 november 2016 at 23:15</td>
-                    <td>New !</td>
-                    <td><div>Translation ready!</div></td>
-                    <td><a href="#">Open</a></td>
-                    <td><a href="#">History</a></td>
-                    <td><a href="#">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td><a href="#">Batman</a></td>
-                    <td>№611412, 03 may 2016 at 23:15</td>
-                    <td>New !</td>
-                    <td><div>Being translated...</div></td>
-                    <td><a href="#">Open</a></td>
-                    <td><a href="#">History</a></td>
-                    <td><a href="#">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td><a href="#">SpiderMan</a></td>
-                    <td>№611412, 03 december 2016 at 23:15</td>
-                    <td>New !</td>
-                    <td><div>Translation ready!</div></td>
-                    <td><a href="#">Open</a></td>
-                    <td><a href="#">History</a></td>
-                    <td><a href="#">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td><a href="#">Donald Duck</a></td>
-                    <td>№611412, 03 october 2016 at 23:15</td>
-                    <td>New !</td>
-                    <td><div>Being translated...</div></td>
-                    <td><a href="#" style="display: none;">Open</a></td>
-                    <td><a href="#">History</a></td>
-                    <td><a href="#">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td><a href="#">GulDan</a></td>
-                    <td>№611412, 03 october 2016 at 23:15</td>
-                    <td>New !</td>
-                    <td><div>Translation ready!</div></td>
-                    <td><a href="#">Open</a></td>
-                    <td><a href="#">History</a></td>
-                    <td><a href="#">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td><a href="#">Donald Duck</a></td>
-                    <td>№611412, 03 october 2016 at 23:15</td>
-                    <td>New !</td>
-                    <td><div>Being translated...</div></td>
-                    <td><a href="#" style="display: none;">Open</a></td>
-                    <td><a href="#">History</a></td>
-                    <td><a href="#">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td><a href="#">Storm</a></td>
-                    <td>№611412, 03 october 2016 at 23:15</td>
-                    <td>New !</td>
-                    <td><div>Translation ready!</div></td>
-                    <td><a href="#">Open</a></td>
-                    <td><a href="#">History</a></td>
-                    <td><a href="#">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td><a href="#">halk</a></td>
-                    <td>№611412, 03 october 2016 at 23:15</td>
-                    <td>New !</td>
-                    <td><div>Translation ready!</div></td>
-                    <td><a href="#">Open</a></td>
-                    <td><a href="#">History</a></td>
-                    <td><a href="#">Delete</a></td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td><a href="#">Donald Duck</a></td>
-                    <td>№611412, 03 october 2016 at 23:15</td>
-                    <td>New !</td>
-                    <td><div>Translation ready!</div></td>
-                    <td><a href="#">Open</a></td>
-                    <td><a href="#">History</a></td>
-                    <td><a href="#">Delete</a></td>
-                </tr>
-            </table>
-            <ul class="inbox-pagination">
-                <li>Pages:</li>
-                <li style="display: none;"><a href="#">First</a></li>
-                <li style="display: none;"><a href="#">Previous </a></li>
-                <li><a href="#" class="active">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
-                <li><a href="#">8</a></li>
-                <li><a href="#">Next</a></li>
-                <li><a href="#">Last</a></li>
-            </ul>
+            </div>
         </div>
     </div>
     <div class="feedback">

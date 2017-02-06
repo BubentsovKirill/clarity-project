@@ -3,7 +3,7 @@ $(document).ready(function () {
     var overlay = $('#overlay');
     var open_modal = $('.open-modal');
     var close = $('.modal-close, #overlay,.modal-button-close');
-    modal = $('.modal-div');
+    var modal = $('.modal-div');
 
     open_modal.click(function (event) {
         event.preventDefault();

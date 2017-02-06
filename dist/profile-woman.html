@@ -11,10 +11,35 @@
 <body>
 <div class="wrapper">
     <header>
+        <nav class="nav-top">
+            <ul>
+                <li>
+                    <a href="#">Search
+                        <span class="search"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">Profile
+                        <span class="profile-active"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Settings
+                        <span class="settings"></span>
+                    </a>
+                </li>
+                <li><a href="#">FAQs
+                    <span class="faqs"></span>
+                </a>
+                </li>
+            </ul>
+        </nav>
         <div class="logo-wrap">
-            <a href="#">
-                <img src="#" alt="dating.clarity-project.net" width="200px" height="40px">
-            </a>
+            <div class="logo">
+                <a href="#">
+                    <img src="#" alt="dating.clarity-project.net" width="200px" height="40px">
+                </a>
+            </div>
             <ul class="language-items">
                 <li><a href="#" class="flag-en-active"></a></li>
                 <li><a href="#" class="flag-de"></a></li>
@@ -25,14 +50,22 @@
                 <li><a href="#" class="flag-zh"></a></li>
             </ul>
         </div>
-        <nav class="nav-top">
-            <ul>
-                <li><a href="#" class="search">Search</a></li>
-                <li><a href="#" class="profile-active">Profile</a></li>
-                <li><a href="#" class="settings">Settings</a></li>
-                <li><a href="#" class="faqs">FAQs</a></li>
-            </ul>
-        </nav>
+        <div class="user-link">
+            <div class="link-padding">
+                <span class="decor-woman"></span>
+                <a href="#" class="link-avator">
+                    <img src="img/usp_lady.gif" alt="" height="35" width="35">
+                </a>
+                <p>Didier
+                    ( <a href="#"><i>Log out</i></a> )
+                </p>
+                <p>Active Member status till — 07/04/2017</p>
+                <p><a href="psychology.html"><i>Psychological portrait</i></a></p>
+            </div>
+            <div class="status">
+                <span>Loremdasdasdassdf sdf sdf sdsdf sdf asd a</span>
+            </div>
+        </div>
         <div class="message-info">
             <table>
                 <tr>
@@ -45,83 +78,75 @@
                 </tr>
             </table>
         </div>
-        <div class="user-link">
-            <div class="decor-crown-woman"></div>
-            <a href="#" class="profile-img-woman"></a>
-            <p>Men-For-You ( <a href="#">Log out</a> )</p>
-            <p>Active Member status till — 07/04/2017</p>
-            <a href="#">Psychological portrait</a>
-        </div>
-        <div class="user-status">
-            <span>Lorem ipsum dolpasdasdad sd dsjsjhfjkasfa f sfkjha sfha sfas faksfh asdfsdfsdfsdfsdfsdfsdf f sdf sdfs df sdf sdf sdfs fskf askf asf askfa skf sa!</span>
-        </div>
     </header>
     <div class="line"></div>
     <div class="content content-padding">
         <div class="left-column">
-            <h1>My page</h1>
-            <nav class="nav-profile">
-                <ul>
-                    <li class="active">My page</li>
-                    <li><a href="#">My mail</a> (10)</li>
-                    <li><a href="#">My visitors</a></li>
-                    <li><a href="">Favorite</a> (10)</li>
-                </ul>
-            </nav>
-            <div class="name-title">
-                <div class="avator">
-                    <a href="#" class="avator-woman">
-                        <img src="img/usp_lady.gif" alt="woman">
-                        <div class="avator-overlay">
+            <div class="left-column-wrap">
+                <h1>My page</h1>
+                <nav class="nav-profile">
+                    <ul>
+                        <li class="active">My page</li>
+                        <li><a href="#">My mail</a> (10)</li>
+                        <li><a href="#">My visitors</a></li>
+                        <li><a href="">Favorite</a> (10)</li>
+                    </ul>
+                </nav>
+                <div class="name-title">
+                    <div class="avator">
+                        <a href="#" class="avator-woman">
+                            <img src="img/usp_lady.gif" alt="woman">
+                            <div class="avator-overlay">
                             <span>
                                 upload
                                 <br>
                                 photo
                             </span>
-                        </div>
-                    </a>
-                </div>
-                <div class="username-container">
-                    <h2>Men-For-You  <a href="#modal-status" class="open-modal" >(update status)</a></h2>
-                    <div class="status">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="username-container">
+                        <h2>Men-For-You  <a href="#modal-status" class="open-modal" >(update status)</a></h2>
+                        <div class="status">
                         <span>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ducimus excepturi magni minus numquam, officia officiis perferendis reprehenderit? Aliquid aspernatur assumenda consectetur deserunt id inventore numquam ratione, voluptate voluptates. Molestias?
                         </span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <ul class="nav-bottom">
-                <li>General information</li>
-                <li class="photo-gallery"><a href="#">Photo gallery</a> (6)</li>
-            </ul>
-            <div class="user-info">
-                <div class="section">
-                    <p>
-                        Date of birth: 01 Jan 1980
-                        <br>
-                        Resident country: Andorra
-                        <br>
-                        Marital status: Single
-                        <br>
-                        Children: Two children
-                    </p>
-                    <p>
-                        Professional status: Industrial worker
-                        <br>
-                        Education: Secondary education
-                    </p>
-                    <p>
-                        About me: <span>Я общительная личность. Люблю знакомиться с новыми людьми, общаться в большой компании,
+                <ul class="nav-bottom">
+                    <li><b>General information</b></li>
+                    <li class="photo-gallery"><a href="#">Photo gallery</a> (6)</li>
+                </ul>
+                <div class="user-info">
+                    <div class="section">
+                        <p>
+                            Date of birth: 01 Jan 1980
+                            <br>
+                            Resident country: Andorra
+                            <br>
+                            Marital status: Single
+                            <br>
+                            Children: Two children
+                        </p>
+                        <p>
+                            Professional status: Industrial worker
+                            <br>
+                            Education: Secondary education
+                        </p>
+                        <p>
+                            About me: <span>Я общительная личность. Люблю знакомиться с новыми людьми, общаться в большой компании,
                         участвовать в спорах. Среди моих друзей есть и мальчики, и девочки. Я назвал бы себя
                         доброжелательным человеком, часто я помогаю своим друзьям.</span>
-                    </p>
-                    <p>
-                        About my ideal partner: <span>Я назвал бы себя доброжелательным человеком, часто я помогаю своим друзьям.</span>
-                    </p>
-                    <p>
-                        Passed tests: <span>"Relationship values" "Type of temperament" "Communication style" "Attitude to new
+                        </p>
+                        <p>
+                            About my ideal partner: <span>Я назвал бы себя доброжелательным человеком, часто я помогаю своим друзьям.</span>
+                        </p>
+                        <p>
+                            Passed tests: <span>"Relationship values" "Type of temperament" "Communication style" "Attitude to new
                         acquaintances"</span>
-                    </p>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

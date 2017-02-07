@@ -103,7 +103,7 @@ a:hover{
   }
 }
 .nav-mail {
-  .active,nav-mail-inbox{
+  .nav-mail-inbox{
     .nav-mail-decor{
       background: url("../img/decors.png") no-repeat -143px -125px;
     }
@@ -140,10 +140,13 @@ a:hover{
   margin-right: 0;
   position: relative;
 }
+.underline{
+  text-decoration: underline;
+}
 .photo-gallery-active:before {
   content: "";
-  top: 10px;
-  left: 25px;
+  top: 17px;
+  left: 40px;
   width: 40px;
   position: absolute;
   height: 24px;

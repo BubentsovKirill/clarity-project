@@ -1,28 +1,28 @@
 //header
 header {
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 11px;
   .logo-wrap {
     padding-top: 20px;
     float: left;
-    width:40%;
-    .logo{
-      width:200px;
-      margin:0px auto;
-    }
-    .language-items{
-      width:300px;
+    width: 40%;
+    .logo {
+      width: 200px;
       margin: 0px auto;
-      li{
+    }
+    .language-items {
+      width: 300px;
+      margin: 0px auto;
+      li {
         display: inline-block;
-        margin-right:16px;
-        a{
+        margin-right: 16px;
+        a {
           display: block;
-          width:25px;
-          height:21px;
+          width: 25px;
+          height: 21px;
         }
       }
-      li:last-child{
+      li:last-child {
         margin-right: 0;
       }
     }
@@ -30,29 +30,29 @@ header {
   .nav-top {
     padding-top: 10px;
     float: left;
-    width:30%;
-    ul{
+    width: 30%;
+    ul {
       margin-left: 6%;
-      width:100%;
-      li{
+      width: 100%;
+      li {
         margin-right: 2%;
-        width:22%;
+        width: 22%;
         text-align: center;
         display: inline-block;
-        a{
+        a {
           position: relative;
           display: block;
           padding-top: 65px;
-          span{
+          span {
             left: 0;
             right: 0;
             display: block;
             margin: 0px auto;
-            top:0;
+            top: 0;
             position: absolute;
             display: block;
-            height:67px;
-            width:84px;
+            height: 67px;
+            width: 84px;
             margin: 0px auto;
           }
         }
@@ -62,57 +62,57 @@ header {
   .user-link {
     position: relative;
     float: left;
-    width:30%;
-    .link-padding{
-      padding:30px 0 0 50px;
-      .link-avator{
+    width: 30%;
+    .link-padding {
+      padding: 30px 0 0 50px;
+      .link-avator {
         position: absolute;
-        left:0px;
-        top:29px;
+        left: 0px;
+        top: 29px;
         background-size: 100%;
-        img{
-          border:1px solid #000;
+        img {
+          border: 1px solid #000;
         }
       }
-      .decor-man{
-        top:13px;
-        left:8px;
+      .decor-man {
+        top: 13px;
+        left: 8px;
         position: absolute;
         display: block;
-        height:12px;
-        width:20px;
+        height: 12px;
+        width: 20px;
         background: url('../img/decors.png') no-repeat -50px -50px;
       }
-      .decor-woman{
-        top:13px;
-        left:8px;
+      .decor-woman {
+        top: 13px;
+        left: 8px;
         position: absolute;
         display: block;
-        height:12px;
-        width:20px;
+        height: 12px;
+        width: 20px;
         background: url('../img/decors.png') no-repeat -35px -98px;
       }
-      p{
+      p {
         font-size: 12px;
         padding: 0 0 5px 0;
         margin: 0;
       }
     }
-    .status{
-      top: 100px;
+    .status {
+      top: 95px;
       position: absolute;
       max-width: 300px;
       background: #52a1b4;
       border-radius: 10px;
-      padding:5px 10px;
+      padding: 5px 10px;
       left: 0px;
-      span{
+      span {
         color: #fff;
         font-size: 14px;
         font-style: italic;
       }
     }
-    .status:before{
+    .status:before {
       content: "";
       top: -20px;
       left: 22px;
@@ -122,7 +122,6 @@ header {
       border-left: 10px solid #52a1b4;
     }
   }
-
 }
 .message-info {
   background: #f9f9ea;
@@ -152,17 +151,25 @@ header {
     }
   }
 }
+
 //login
- .login{
-   .logo-wrap{
-     margin: 0px auto;
-     width:350px;
-     float: none;
-     .logo{
-       margin:0;
-     }
-   }
- }
+.login {
+  padding-bottom: 5px;
+  .logo-wrap {
+    padding-top: 10px;
+    margin: 0px auto;
+    width: 350px;
+    float: none;
+    .logo {
+      margin: 0;
+    }
+  }
+}
+
+.main-page {
+  padding-bottom: 25px;
+}
+
 .sign-in {
   margin: 0 0 0 40px;
   form {
@@ -180,63 +187,64 @@ header {
     }
   }
 }
-.main-page{
-  .logo-wrap{
+
+.main-page {
+  .logo-wrap {
     float: left;
-    width:33%;
+    width: 33%;
     margin-left: 33%;
-    .logo{
-      width:350px;
+    .logo {
+      width: 350px;
     }
   }
-  .right-column{
-    width:33%;
+  .right-column {
+    width: 33%;
     padding-top: 30px;
     float: left;
-    .login-form{
+    .login-form {
       padding-left: 80px;
       position: relative;
-      .form-group{
+      .form-group {
         margin-bottom: 10px;
-        width:200px;
-        label{
+        width: 200px;
+        label {
           line-height: 23px;
-          font-size:12px;
+          font-size: 12px;
           position: absolute;
-          left:10px;
+          left: 10px;
         }
-        input{
-          font-size:14px;
+        input {
+          font-size: 14px;
         }
       }
-      a{
+      a {
         font-size: 12px;
         font-style: italic;
       }
-      ul{
-        span{
-          font-size:12px;
+      ul {
+        span {
+          font-size: 12px;
           font-style: italic;
           line-height: 30px;
         }
-        li:first-child{
+        li:first-child {
           vertical-align: top;
         }
-        li{
+        li {
           display: inline-block;
-          a{
+          a {
             display: block;
-            height:30px;
-            width:30px;
+            height: 30px;
+            width: 30px;
             background: url('../img/social-icon.png') no-repeat;
           }
-          .vk{
+          .vk {
             background-position: 0px 0px;
           }
-          .fb{
+          .fb {
             background-position: -40px 0px;
           }
-          .g{
+          .g {
             background-position: -80px 0px;
           }
         }
@@ -244,27 +252,32 @@ header {
     }
   }
 }
-.intro{
-  padding: 0 15%;
-  font-size:20px;
+
+.intro {
+  padding: 0 13%;
+  font-size: 19px;
 }
-.heart{
-  width:40%;
+
+.heart {
+  width: 40%;
   float: left;
-  margin-left:30%;
-  img{
+  margin-left: 30%;
+  img {
     display: block;
-    margin: 0px auto ;
+    margin: 0px auto;
+    margin-top: 5px;
   }
-  a{
-    font-size:25px;
+  a {
+    font-size: 25px;
   }
 }
-.extra-column{
-  padding-top: 250px;
-  width:30%;
+
+.extra-column {
+  padding-top: 260px;
+  width: 30%;
   float: left;
 }
+
 //content
 .content {
   position: relative;
@@ -274,6 +287,7 @@ header {
     background: url('../img/footer-patern.png') repeat-x;
   }
 }
+
 header,
 .content {
   &:after {
@@ -287,19 +301,13 @@ header,
 .request {
   margin: 0 0 0 40px;
   form {
+    margin-top: 40px;
     label {
       font-size: 18px;
     }
     input[type="email"] {
       width: 300px;
-      margin: 0 0 20px 0;
-    }
-    input[type="submit"] {
-      font-size: 12px;
-      background: #fff;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px;
+      margin: 0 0 30px 0;
     }
   }
 }
@@ -308,13 +316,13 @@ header,
 .left-column {
   width: 70%;
   float: left;
-  .left-column-wrap{
+  .left-column-wrap {
     padding-left: 30px;
     padding-right: 30px;
   }
   .nav-profile {
-    font-size:15px;
-    margin-bottom: 20px;
+    font-size: 15px;
+    margin-bottom: 25px;
     li {
       display: inline-block;
       margin-right: 25px;
@@ -410,7 +418,7 @@ header,
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
       border-radius: 10px;
-      padding:5px 10px;
+      padding: 5px 10px;
       span {
         color: #fff;
         font-size: 14px;
@@ -443,7 +451,7 @@ header,
     }
     p {
       font-style: italic;
-      padding-top: 16px;
+      padding-top: 12px;
       border-top: 1px solid #ccc;
       span {
         font-style: normal;
@@ -458,9 +466,9 @@ header,
   right: 0;
   width: 30%;
   float: left;
-  left:70%;
-  .right-column-wrap{
-    padding-left:0px;
+  left: 70%;
+  .right-column-wrap {
+    padding-left: 0px;
   }
   h2 {
     font-style: italic;
@@ -483,7 +491,7 @@ header,
         margin-bottom: 20px;
       }
       p {
-        line-height:20px;
+        line-height: 20px;
         font-size: 12px;
       }
     }
@@ -515,18 +523,25 @@ header,
     }
   }
 }
+
 //faqs
-ol{
-  li{
-    p:first-child{
-      font-weight:bold;
+ol {
+  li {
+    margin-bottom: 10px;
+    p:first-child {
+      font-weight: bold;
+    }
+    p {
+      margin: 0;
     }
   }
 }
+
 //inbox-list
-.my-mail{
-  width:90% !important;
+.my-mail {
+  width: 90% !important;
 }
+
 .inbox-list {
   margin-top: 10px;
   width: 100%;
@@ -542,27 +557,27 @@ ol{
       padding: 5px 5px 5px 0;
       text-align: left;
     }
-    td:first-child{
-      width:1%;
+    td:first-child {
+      width: 1%;
     }
     td:nth-child(2) {
-      width: 15% ;
+      width: 15%;
     }
     td:nth-child(3) {
       width: 20%;
       font-family: Arial, sans-serif;
       font-style: italic;
-      font-size:14px;
+      font-size: 14px;
     }
     td:nth-child(4) {
-      width:7%;
+      width: 7%;
       padding-right: 10px;
       text-align: right;
       color: #b32e2f;
       font-style: italic;
     }
     td:nth-child(5) {
-      width:20%;
+      width: 20%;
       div {
         font-size: 14px;
         padding: 5px 5px 5px 25px;
@@ -576,9 +591,9 @@ ol{
     td:nth-child(7),
     td:nth-child(8) {
       text-align: right;
-      width:10%;
+      width: 10%;
       a {
-        width:80px;
+        width: 80px;
         display: block;
       }
     }
@@ -625,7 +640,7 @@ ol{
 //visitors
 .visitors {
   .nav-visitors {
-    font-size:15px;
+    font-size: 15px;
     margin-bottom: 20px;
     li {
       display: inline-block;
@@ -690,11 +705,15 @@ ol{
 .psychology {
   width: 60%;
   h1 {
-    margin-bottom: 50px;
+    margin-bottom: 67px;
+  }
+  p {
+    margin-top: 20px;
+    margin-bottom: 0;
   }
   li {
     display: list-item !important;
-    padding-top: 10px;
+    padding-top: 6px;
     font-weight: normal;
   }
 }
@@ -702,8 +721,8 @@ ol{
 //settings
 .settings {
   .nav-settings {
-    margin-bottom: 30px;
-    font-size:15px;
+    margin-bottom: 40px;
+    font-size: 15px;
     li {
       display: inline-block;
       margin-right: 30px;
@@ -730,7 +749,7 @@ ol{
   }
   form {
     label {
-      font-size:13px;
+      font-size: 15px;
       font-style: italic;
     }
     textarea {
@@ -742,10 +761,15 @@ ol{
   table {
     td {
       vertical-align: top;
-      padding-bottom: 30px;
+      padding-bottom: 22px;
       span {
         font-size: 10px;
+        color: #666;
+        display: block;
       }
+    }
+    td:first-child {
+      width: 120px;
     }
     td:last-child {
       padding-left: 20px;
@@ -756,7 +780,7 @@ ol{
 //search, members, matches
 .search {
   .nav-search {
-    font-size:15px;
+    font-size: 15px;
     li {
       display: inline-block;
       margin-right: 30px;
@@ -772,9 +796,10 @@ ol{
   .search-form {
     label {
       font-style: italic;
+      font-size: 15px;
     }
-    padding: 20px 20px 10px 20px;
-    margin-top: 30px;
+    padding: 10px 0;
+    margin-top: 25px;
     width: 550px;
     border: 1px solid black;
     -webkit-border-radius: 8px;
@@ -784,22 +809,22 @@ ol{
       width: 100%;
       td {
         text-align: center;
-        padding-bottom: 20px;
+        padding-bottom: 7px;
       }
     }
   }
   .member-items,
   .matches-items {
-    margin-top: 20px;
+    margin-top: 25px;
     width: 800px;
     border: 1px solid black;
-    padding: 10px;
+    padding: 27px 10px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
     .member-item,
     .matches-item {
-      padding: 20px 0;
+      padding: 15px 0 15px 0;
       display: inline-block;
       width: 33%;
       text-align: center;
@@ -815,13 +840,20 @@ ol{
         margin-bottom: 10px;
       }
       .member-item-name,
-      .member-item-remote,
+      .member-item-remove,
       .member-item-info,
       .matches-item-name,
       .matches-item-add,
       .matches-item-info {
         font-style: italic;
         margin: 0;
+        font-size: 15px;
+      }
+      .member-item-remove a,
+      .matches-item-add a {
+        text-decoration: none;
+        border-bottom: 1px dashed;
+        border-color: #52a1b4;
       }
     }
   }
@@ -829,7 +861,7 @@ ol{
 
 //photoalbums
 .photoalbums {
-  margin-top: 50px;
+  margin-top: 40px;
   padding: 20px;
   ul {
     width: 100%;
@@ -839,7 +871,7 @@ ol{
       display: inline-block;
       .album-link {
         display: block;
-        width: 35%;
+        width: 100px;
         float: left;
         .album-img {
           width: 64px;
@@ -866,7 +898,7 @@ ol{
         top: 0;
         left: 90px;
         position: absolute;
-        width: 330px;
+        width: 450px;
         border: 1px solid #000;
         -webkit-border-radius: 8px;
         -moz-border-radius: 8px;
@@ -875,7 +907,7 @@ ol{
           width: 100%;
           tr {
             td {
-              padding-bottom: 20px !important;
+              padding-bottom: 10px !important;
               text-align: left;
               input {
                 width: 100%;
@@ -893,67 +925,69 @@ ol{
 
 //photoalbum
 .link-back {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .album-nav {
-  margin-top: 20px;
+  margin-top: 25px;
   li {
     display: inline-block;
     margin-right: 10px;
   }
 }
-.add-photo{
+
+.add-photo {
   display: none;
   margin-top: 20px;
   padding: 20px;
-  width:350px;
-  border:1px solid #000;
-  -webkit-border-radius:5px;
-  -moz-border-radius:5px;
-  border-radius:5px;
+  width: 350px;
+  border: 1px solid #000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 
-  td{
-    padding:10px;
+  td {
+    padding: 10px;
   }
-  td:last-child{
+  td:last-child {
     padding-right: 0;
   }
 }
-.photo-items{
-  .photo-item{
+
+.photo-items {
+  .photo-item {
     -webkit-box-shadow: 0px 1px 5px 0px #000;
     -moz-box-shadow: 0px 1px 5px 0px #000;
     box-shadow: 0px 1px 5px 0px #000;
     position: relative;
     display: inline-block;
     margin-right: 45px;
-    margin-top: 40px;
-    .photo-link{
-      padding:8px;
+    margin-top: 25px;
+    .photo-link {
+      padding: 8px;
       background: #fff;
       display: block;
       background: #fff;
-      img{
+      img {
         display: block;
-        width:98px;
-        height:98px;
+        width: 82px;
+        height: 82px;
       }
     }
-    .photo-delete{
+    .photo-delete {
       position: absolute;
-      width:28px;
-      height:28px;
-      top:-17px;
-      right:-17px;
+      width: 28px;
+      height: 28px;
+      top: -17px;
+      right: -17px;
       background: url('../img/close.png') no-repeat;
     }
-    .photo-edit{
+    .photo-edit {
       position: absolute;
-      width:28px;
-      height:28px;
-      top:25px;
-      right:-17px;
+      width: 28px;
+      height: 28px;
+      top: 20px;
+      right: -17px;
       background: url('../img/album_photo_edit.png') no-repeat;
     }
   }
@@ -977,11 +1011,11 @@ ol{
 
 .modal-close {
   position: absolute;
-  width:28px;
-  height:28px;
+  width: 28px;
+  height: 28px;
   background: url('../img/close.png') no-repeat;
-  top:15px;
-  right:15px;
+  top: 15px;
+  right: 15px;
 }
 
 #modal-status {

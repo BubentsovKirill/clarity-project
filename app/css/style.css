@@ -1287,6 +1287,9 @@ ol li {
   cursor: pointer;
   display: none; }
 
+.modal-div h2 {
+  font-weight: 400; }
+
 .modal-close {
   position: absolute;
   width: 28px;

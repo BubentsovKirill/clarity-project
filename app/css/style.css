@@ -727,7 +727,7 @@ header:after,
     padding-right: 30px; }
   .left-column .nav-profile {
     font-size: 15px;
-    margin-bottom: 25px; }
+    margin-bottom: 30px; }
     .left-column .nav-profile li {
       display: inline-block;
       margin-right: 25px; }
@@ -736,8 +736,6 @@ header:after,
     .left-column .nav-profile .active, .left-column .nav-profile .nav-top .search-active, .nav-top .left-column .nav-profile .search-active, .left-column .nav-profile .nav-top .profile-active, .nav-top .left-column .nav-profile .profile-active, .left-column .nav-profile .nav-top .settings-active, .nav-top .left-column .nav-profile .settings-active, .left-column .nav-profile .nav-top .faqs-active, .nav-top .left-column .nav-profile .faqs-active {
       font-weight: bold;
       font-style: italic; }
-      .left-column .nav-profile .active span, .left-column .nav-profile .nav-top .search-active span, .nav-top .left-column .nav-profile .search-active span, .left-column .nav-profile .nav-top .profile-active span, .nav-top .left-column .nav-profile .profile-active span, .left-column .nav-profile .nav-top .settings-active span, .nav-top .left-column .nav-profile .settings-active span, .left-column .nav-profile .nav-top .faqs-active span, .nav-top .left-column .nav-profile .faqs-active span {
-        font-style: normal; }
   .left-column .name-title .avator {
     position: relative; }
     .left-column .name-title .avator .avator-overlay {
@@ -784,7 +782,7 @@ header:after,
     float: left;
     padding-left: 50px; }
     .left-column .username-container h2 {
-      margin-top: 0;
+      margin: 0 0 15px 0;
       font-size: 30px;
       font-weight: 400; }
       .left-column .username-container h2 a {
@@ -807,8 +805,8 @@ header:after,
         font-style: italic; }
     .left-column .username-container .status:before {
       content: "";
-      top: 40px;
-      left: 80px;
+      top: 36px;
+      left: 76px;
       position: absolute;
       border: 12px solid transparent;
       border-bottom: 12px solid #52a1b4;
@@ -822,6 +820,7 @@ header:after,
   .left-column .user-info p:first-child {
     border-top: none; }
   .left-column .user-info p {
+    font-size: 15px;
     font-style: italic;
     padding-top: 12px;
     border-top: 1px solid #ccc; }
@@ -841,9 +840,9 @@ header:after,
     font-style: italic;
     font-size: 16px; }
   .right-column .news-block {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
     height: 400px;
     width: 300px;
     border: 1px solid #000;
@@ -879,7 +878,7 @@ header:after,
   font-style: italic; }
 
 ol li {
-  margin-bottom: 10px; }
+  margin-bottom: 15px; }
   ol li p:first-child {
     font-weight: bold; }
   ol li p {
@@ -1311,10 +1310,14 @@ ol li {
   opacity: 0;
   margin: 0 -300px 0 -300px;
   z-index: 5;
-  padding: 20px; }
+  padding: 30px 20px 20px 20px; }
+  #modal-status h2, #modal-support h2, #modal-photo-delete h2, #modal-photo-edit h2, #modal-album-delete h2 {
+    font-size: 30px;
+    margin-top: 5px; }
   #modal-status input[type="text"], #modal-support input[type="text"], #modal-photo-delete input[type="text"], #modal-photo-edit input[type="text"], #modal-album-delete input[type="text"] {
     width: 100%;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    border: 1px solid black; }
   #modal-status input[type="submit"], #modal-support input[type="submit"], #modal-photo-delete input[type="submit"], #modal-photo-edit input[type="submit"], #modal-album-delete input[type="submit"] {
     font-size: 12px;
     -webkit-border-radius: 5px;
@@ -1329,8 +1332,16 @@ ol li {
 #modal-support textarea {
   width: 100%;
   resize: none;
-  height: 200px;
-  margin-bottom: 10px; }
+  height: 250px;
+  margin-bottom: 10px;
+  border: 1px solid black; }
+
+.nav-profile li,
+.nav-mail li {
+  font-style: italic !important; }
+  .nav-profile li a,
+  .nav-mail li a {
+    font-style: normal !important; }
 
 /*
     Colorbox Core Style:

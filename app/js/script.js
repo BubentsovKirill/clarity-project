@@ -30,7 +30,8 @@ $(document).ready(function () {
         $(this).find('li').each(function(i) {
             $(this).click(function(){
                 $(this).addClass('active').siblings().removeClass('active')
-                    .closest('.visitor-tab, .settings-tab').find('.visitor-tab-item, .settings-tab-item').removeClass('active').eq(i).addClass('active');
+                    .closest('.visitor-tab, .settings-tab').find('.visitor-tab-item, .settings-tab-item')
+                    .removeClass('active').eq(i).addClass('active');
             });
         });
     });

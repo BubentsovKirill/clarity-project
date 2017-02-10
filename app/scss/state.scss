@@ -92,14 +92,17 @@ a:hover{
     background-position: -300px 0px;
   }
   .faqs-active{
-    background-position: -307px -100px;
+    background-position: -30px -100px;
     @extend .active;
   }
 }
 .feedback:hover{
   a{
     background: #52a1b4;
-    color: #fff;
+    span{
+      color: #fff ;
+      border-color: #fff;
+    }
   }
 }
 .nav-mail {
@@ -128,7 +131,7 @@ a:hover{
 }
 .photo-gallery:before {
   content: "";
-  top: 10px;
+  top: 20px;
   left: 25px;
   width: 40px;
   position: absolute;
@@ -153,3 +156,42 @@ a:hover{
   background: url(../img/decors.png) no-repeat -140px -100px;
 }
 
+.alert{
+  position: fixed;
+  top:0;
+  height:50px;
+  width:100%;
+  z-index:10;
+  background: rgba(42, 45, 50, 0.75);
+  margin: 0 -20px;
+  .alert-icon{
+    float: left;
+    width:50px;
+    height:100%;
+    background: rgba(42, 45, 50, 0.9);
+    img{
+      padding-top: 12px;
+      margin: 0px auto;
+      display: block;
+    }
+  }
+  .alert-text{
+    float: left;
+    p{
+      padding: 0 0 0 20px;
+      z-index: 10;
+      color: #fff;
+    }
+  }
+  .close{
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    font-size: 20px;
+    color: #fff;
+  }
+  .close:hover{
+    color: #ccc;
+  }
+}

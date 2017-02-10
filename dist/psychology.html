@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>Psychology -</title>
+    <title>Psychological Portret -</title>
     <link rel="icon" type="image/ico" href="img/heart-icon.ico">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <div class="wrapper">
     <header>
+        <ul class="language-items">
+            <li><a href="#" class="flag-en-active"></a></li>
+            <li><a href="#" class="flag-de"></a></li>
+            <li><a href="#" class="flag-fr"></a></li>
+            <li><a href="#" class="flag-it"></a></li>
+            <li><a href="#" class="flag-ru"></a></li>
+            <li><a href="#" class="flag-es"></a></li>
+            <li><a href="#" class="flag-zh"></a></li>
+        </ul>
         <nav class="nav-top">
             <ul>
                 <li>
@@ -40,15 +49,18 @@
                     <img src="#" alt="dating.clarity-project.net" width="200" height="40">
                 </a>
             </div>
-            <ul class="language-items">
-                <li><a href="#" class="flag-en-active"></a></li>
-                <li><a href="#" class="flag-de"></a></li>
-                <li><a href="#" class="flag-fr"></a></li>
-                <li><a href="#" class="flag-it"></a></li>
-                <li><a href="#" class="flag-ru"></a></li>
-                <li><a href="#" class="flag-es"></a></li>
-                <li><a href="#" class="flag-zh"></a></li>
-            </ul>
+            <div class="message-info">
+                <table>
+                    <tr>
+                        <td>You have 10</td>
+                        <td><a href="#">new message(s)</a></td>
+                    </tr>
+                    <tr>
+                        <td>and 1</td>
+                        <td><a href="#">match(es)</a></td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div class="user-link">
             <div class="link-padding">
@@ -56,27 +68,17 @@
                 <a href="#" class="link-avator">
                     <img src="img/usp_man.gif" alt="" height="35" width="35">
                 </a>
-                <p>Didier
-                    ( <a href="#"><i>Log out</i></a> )
+                <p>Didier&nbsp;
+                    <span>
+                         (<a href="#"><i>Log out</i></a>)
+                    </span>
                 </p>
                 <p>Active Member status till — 07/04/2017</p>
-                <p><a href="#"><i>Psychological portrait</i></a></p>
+                <p><a href="psychology.html"><i>Psychological portrait</i></a></p>
+                <div class="status">
+                    <span>Loremdasdasdassdf sdf sdf sdsdf sdf asd a</span>
+                </div>
             </div>
-            <div class="status">
-                <span>Loremdasdasdassdf sdf sdf sdsdf sdf asd a</span>
-            </div>
-        </div>
-        <div class="message-info">
-            <table>
-                <tr>
-                    <td>You have 10</td>
-                    <td><a href="#">new message(s)</a></td>
-                </tr>
-                <tr>
-                    <td>and 1</td>
-                    <td><a href="#">match(es)</a></td>
-                </tr>
-            </table>
         </div>
     </header>
     <div class="line"></div>
@@ -84,7 +86,9 @@
         <div class="left-column psychology">
            <div class="left-column-wrap">
                <h1>Psychological portrait</h1>
-               &larr; <a href="#">Back</a>
+               <div class="back-link">
+                   &larr; <a href="#">Back</a>
+               </div>
                <p>What do you prefer and who are you looking for?
                </p>
                <p>To help you find a person to whom you would like to say
@@ -96,7 +100,7 @@
                    one after another and their results will help you to find new people. We wish you only pleasant acquaintances!
                </p>
                <p><i>Questionnaires can be filled only once, so please fill them in very attentively!</i></p>
-               <p><strong>Questionnaires to fill:</strong></p>
+               <p style="margin-bottom: 15px"><strong>Questionnaires to fill:</strong></p>
                <ul>
                    <li>Relationship values  (Filled in)</li>
                    <li>Type of temperament  (Filled in)</li>
@@ -107,7 +111,9 @@
         </div>
     </div>
     <div class="feedback">
-        <a href="#modal-support" class="open-modal">Support service</a>
+        <a href="#modal-support" class="open-modal">
+            <span>Support service</span>
+        </a>
     </div>
     <footer>
         <p>© 2010–2017 dating.clarity-project.net</p>

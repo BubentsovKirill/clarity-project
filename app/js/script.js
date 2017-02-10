@@ -12,7 +12,7 @@ $(document).ready(function () {
             function () {
                 $(div)
                     .css('display', 'block')
-                    .animate({opacity: 1, top: '30%'}, 200);
+                    .animate({opacity: 1, top: '20%'}, 200);
             });
     });
     close.click(function () {
@@ -38,17 +38,32 @@ $(document).ready(function () {
 
     //album-add, photo-add
     $('#album-add-block form, .add-photo').css('display','none');
-    $('#album-add-block a.album-add, a.add-photo-link').click(function(event){
+    $('#album-add-block a.album-add, a.edit-albom-link').click(function(event){
         event.preventDefault();
-        $('#album-add-block form,.add-photo').show();
+        $('#album-add-block form,.edit-albom').show();
     });
     $('#album-add-block button[title="album-add-cancel"],.add-photo-cancel').click(function(event){
         event.preventDefault();
-        $('#album-add-block form,.add-photo').hide();
+        $('#album-add-block form,.edit-albom').hide();
     });
 
     //colorbox
     $('a.photo-link').colorbox({rel:'gal'});
+
+    //rotate avator
+    $.fn.addTransform = function(val) {
+        return this.each(function() {
+            var tr = $(this).css('transform');
+            if(tr === 'none') tr = '';
+            $(this).css('transform', tr + ' ' + val);
+        });
+    };
+    $('#modal-edit-avator .rotate').click(function(event) {
+        event.preventDefault();
+        $('#modal-edit-avator .avator').addTransform('rotate(90deg)');
+    });
+
 });
+
 
 

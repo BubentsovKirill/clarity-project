@@ -12,6 +12,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
 var imageminPngquant = require('imagemin-pngquant');
 
+
 gulp.task('scss', function(){
     return gulp.src('app/scss/main.scss')
         .pipe(sass())
@@ -20,11 +21,18 @@ gulp.task('scss', function(){
 });
 
 gulp.task('css',['scss'], function(){
-    return gulp.src('app/css/style.css')
+    return gulp.src(['app/libs/font-awesome/css/font-awesome.css',
+        'app/css/style.css'])
+        .pipe(concat('style.min.css'))
         .pipe(cssnano())
-        .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('tmp/css/'))
 });
+
+gulp.task('copy', function(){
+    return gulp.src('app/libs/font-awesome/fonts/**.*')
+        .pipe(gulp.dest('app/fonts/'))
+});
+
 
 gulp.task('js',function(){
     return gulp.src(['app/libs/jquery/dist/jquery.js',

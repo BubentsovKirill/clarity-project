@@ -1037,12 +1037,12 @@ ol {
   margin-top: 40px;
   width: 800px;
   border: 1px solid black;
-  padding: 10px;
+  padding: 30px 30px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px; }
   .visitors .visitor-tab .visitor-tab-item .visitor-user {
-    padding: 20px 0;
+    padding: 30px 0;
     display: inline-block;
     width: 33%;
     text-align: center; }
@@ -1284,7 +1284,7 @@ ol {
     margin-right: 5px;
     font-size: 15px; }
 
-.edit-albom {
+.edit-album {
   display: none;
   margin-top: 20px;
   padding: 10px 20px;
@@ -1293,11 +1293,11 @@ ol {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
-  .edit-albom td {
+  .edit-album td {
     padding: 4px; }
-    .edit-albom td input[type="text"] {
+    .edit-album td input[type="text"] {
       width: 250px; }
-  .edit-albom td:last-child {
+  .edit-album td:last-child {
     padding-right: 0; }
 
 .photo-items {
@@ -1742,7 +1742,7 @@ a:hover {
   background-position: -300px 0px; }
 
 .nav-top .faqs-active {
-  background-position: -30px -100px; }
+  background-position: -300px -100px; }
 
 .feedback:hover a {
   background: #52a1b4; }

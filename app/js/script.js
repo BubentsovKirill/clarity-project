@@ -37,14 +37,14 @@ $(document).ready(function () {
     });
 
     //album-add, photo-add
-    $('#album-add-block form, .add-photo').css('display','none');
-    $('#album-add-block a.album-add, a.edit-albom-link').click(function(event){
+    $('#album-add-block form, .edit-album').css('display','none');
+    $('#album-add-block a.album-add, a.edit-album-link').click(function(event){
         event.preventDefault();
-        $('#album-add-block form,.edit-albom').show();
+        $('#album-add-block form, .edit-album').show();
     });
     $('#album-add-block button[title="album-add-cancel"],.add-photo-cancel').click(function(event){
         event.preventDefault();
-        $('#album-add-block form,.edit-albom').hide();
+        $('#album-add-block form,.edit-album').hide();
     });
 
     //colorbox

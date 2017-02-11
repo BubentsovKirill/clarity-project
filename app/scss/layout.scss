@@ -700,12 +700,12 @@ ol {
       margin-top: 40px;
       width: 800px;
       border: 1px solid black;
-      padding: 10px;
+      padding: 30px 30px;
       -webkit-border-radius: 8px;
       -moz-border-radius: 8px;
       border-radius: 8px;
       .visitor-user {
-        padding: 20px 0;
+        padding: 30px 0;
         display: inline-block;
         width: 33%;
         text-align: center;
@@ -971,7 +971,7 @@ ol {
   }
 }
 
-.edit-albom {
+.edit-album {
   display: none;
   margin-top: 20px;
   padding: 10px 20px;
@@ -980,7 +980,6 @@ ol {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-
   td {
     padding: 4px;
     input[type="text"]{

@@ -52,16 +52,16 @@ a:hover{
   }
 }
 .nav-top{
-  a{
+  span{
     background: url('../img/nav-icons.png') no-repeat;
   }
-  .nav-top-active{
+  .active{
     font-weight:800;
     color: #1b2b32;
     font-style: italic;
     text-decoration: none;
   }
-  .nav-top-active:hover{
+  .active:hover{
     font-weight:800;
     color: #b32e2f;
     font-style: italic;
@@ -72,38 +72,41 @@ a:hover{
   }
   .search-active{
     background-position: 0px -100px;
-    @extend .nav-top-active;
+    @extend .active;
   }
   .profile{
-    background-position: -103px 0px;
+    background-position: -100px 0px;
   }
   .profile-active{
-    background-position: -103px -100px;
-    @extend .nav-top-active;
+    background-position: -100px -100px;
+    @extend .active;
   }
   .settings{
     background-position: -200px 0px;
   }
   .settings-active{
     background-position: -200px -100px;
-    @extend .nav-top-active;
+    @extend .active;
   }
   .faqs{
-    background-position: -307px 0px;
+    background-position: -300px 0px;
   }
   .faqs-active{
-    background-position: -307px -100px;
-    @extend .nav-top-active;
+    background-position: -300px -100px;
+    @extend .active;
   }
 }
 .feedback:hover{
   a{
     background: #52a1b4;
-    color: #fff;
+    span{
+      color: #fff ;
+      border-color: #fff;
+    }
   }
 }
 .nav-mail {
-  .active,.nav-mail-inbox{
+  .nav-mail-inbox{
     .nav-mail-decor{
       background: url("../img/decors.png") no-repeat -143px -125px;
     }
@@ -113,6 +116,13 @@ a:hover{
       background: url("../img/decors.png") no-repeat -85px -160px;
     }
   }
+  .nav-mail-system{
+    .nav-mail-decor{
+      margin: 0px auto;
+      background: url("../img/sys_msg.png") no-repeat 0px 0px;
+    }
+  }
+
 }
 .photo-gallery {
   padding-top: 40px;
@@ -121,7 +131,7 @@ a:hover{
 }
 .photo-gallery:before {
   content: "";
-  top: 10px;
+  top: 20px;
   left: 25px;
   width: 40px;
   position: absolute;
@@ -133,13 +143,55 @@ a:hover{
   margin-right: 0;
   position: relative;
 }
+.underline{
+  text-decoration: underline;
+}
 .photo-gallery-active:before {
   content: "";
-  top: 10px;
-  left: 25px;
+  top: 17px;
+  left: 40px;
   width: 40px;
   position: absolute;
   height: 24px;
   background: url(../img/decors.png) no-repeat -140px -100px;
 }
 
+.alert{
+  position: fixed;
+  top:0;
+  height:50px;
+  width:100%;
+  z-index:10;
+  background: rgba(42, 45, 50, 0.75);
+  margin: 0 -20px;
+  .alert-icon{
+    float: left;
+    width:50px;
+    height:100%;
+    background: rgba(42, 45, 50, 0.9);
+    img{
+      padding-top: 12px;
+      margin: 0px auto;
+      display: block;
+    }
+  }
+  .alert-text{
+    float: left;
+    p{
+      padding: 0 0 0 20px;
+      z-index: 10;
+      color: #fff;
+    }
+  }
+  .close{
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    font-size: 20px;
+    color: #fff;
+  }
+  .close:hover{
+    color: #ccc;
+  }
+}

@@ -3,7 +3,7 @@ $(document).ready(function () {
     var overlay = $('#overlay');
     var open_modal = $('.open-modal');
     var close = $('.modal-close, #overlay,.modal-button-close');
-    modal = $('.modal-div');
+    var modal = $('.modal-div');
 
     open_modal.click(function (event) {
         event.preventDefault();
@@ -12,7 +12,7 @@ $(document).ready(function () {
             function () {
                 $(div)
                     .css('display', 'block')
-                    .animate({opacity: 1, top: '30%'}, 200);
+                    .animate({opacity: 1, top: '20%'}, 200);
             });
     });
     close.click(function () {
@@ -30,24 +30,40 @@ $(document).ready(function () {
         $(this).find('li').each(function(i) {
             $(this).click(function(){
                 $(this).addClass('active').siblings().removeClass('active')
-                    .closest('.visitor-tab, .settings-tab').find('.visitor-tab-item, .settings-tab-item').removeClass('active').eq(i).addClass('active');
+                    .closest('.visitor-tab, .settings-tab').find('.visitor-tab-item, .settings-tab-item')
+                    .removeClass('active').eq(i).addClass('active');
             });
         });
     });
 
     //album-add, photo-add
-    $('#album-add-block form, .add-photo').css('display','none');
-    $('#album-add-block a.album-add, a.add-photo-link').click(function(event){
+    $('#album-add-block form, .edit-album').css('display','none');
+    $('#album-add-block a.album-add, a.edit-album-link').click(function(event){
         event.preventDefault();
-        $('#album-add-block form,.add-photo').show();
+        $('#album-add-block form, .edit-album').show();
     });
     $('#album-add-block button[title="album-add-cancel"],.add-photo-cancel').click(function(event){
         event.preventDefault();
-        $('#album-add-block form,.add-photo').hide();
+        $('#album-add-block form,.edit-album').hide();
     });
 
     //colorbox
     $('a.photo-link').colorbox({rel:'gal'});
+
+    //rotate avator
+    $.fn.addTransform = function(val) {
+        return this.each(function() {
+            var tr = $(this).css('transform');
+            if(tr === 'none') tr = '';
+            $(this).css('transform', tr + ' ' + val);
+        });
+    };
+    $('#modal-edit-avator .rotate').click(function(event) {
+        event.preventDefault();
+        $('#modal-edit-avator .avator').addTransform('rotate(90deg)');
+    });
+
 });
+
 
 

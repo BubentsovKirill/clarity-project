@@ -1,7 +1,9 @@
-@charset "UTF-8";
-@font-face{
-  font-family: Georgia;
-  src: url(../fonts/Georgia.ttf);
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 html{
   height:100%;
@@ -11,8 +13,8 @@ body{
   min-width:960px;
   font-size:16px;
   line-height: 1.3;
-  font-family: Georgia, serif;
-  padding:0px 20px 0px 20px;
+  font-family: 'Georgia', serif;
+  padding:0 20px 0 20px;
 }
 .wrapper{
   position: relative;
@@ -26,43 +28,64 @@ ul{
   padding:0;
   margin:0;
 }
-input,textarea{
+input,textarea,select{
+  font-size:15px;
   font-family: Arial,Helvetica,sans-serif;
-  border:1px solid black ;
 }
 .line{
+  margin-bottom: 20px;
   height:7px;
   background: url('../img/header-end-line.png') no-repeat 100% 50%,
   url('../img/header-end-line.png') no-repeat 0% 50%;
+}
+.back-link{
+  font-size:15px;
+  margin-top: 50px;
 }
 .text-center{
   text-align: center;
 }
 .content-padding{
-  padding-bottom: 80px;
+  padding-bottom: 150px;
+}
+h1{
+  margin-top: 8px;
+  margin-bottom:16px;
+  font-size: 30px;
+  font-weight: 400;
 }
 input[type="submit"]{
-  font-size:12px;
+  font-size:11px;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
   border-radius:5px;
   background: #fff;
+  border-width:1px;
+  border:1px solid #ccc;
+  font-size: 11px;
+  padding: 3px 8px 3px 8px;
 }
 button[title="album-add-cancel"]{
-  @extend input[type="submit"];
-  border:1px solid #000;
-  font-family: Arial;
+  font-size:11px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  background: #fff;
+  border-width:1px;
+  border:1px solid #ccc;
+  font-size: 11px;
+  padding: 3px 8px 3px 8px;
 }
 .pagination {
-  margin: 20px 0 20px 20px;
+  margin: 35px 10px 0 20px;
   li {
     display: inline-block;
-    font-style: normal !important;
-    font-family: Arial, sans-serif;
+    font-style: italic;
     margin-right: 5px !important;
+    font-size: 15px;
     a {
       display: block;
-      padding: 4px 5px 3px 5px;
+      padding: 4px 7px 5px 7px;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       border-radius: 5px;
@@ -73,33 +96,38 @@ button[title="album-add-cancel"]{
       text-decoration: none;
     }
   }
+  li:first-child{
+    margin-right: 15px !important;
+  }
+  li:last-child{
+    margin-right: 0px !important;
+  }
 }
 footer{
   position: absolute;
   width:100%;
   bottom:0;
-  padding: 20px 0;
-  margin-bottom: -90px;
-  height:50px;
+  padding: 16px 0 10px 0;
   font-family: Arial, Helvetica, sans-serif;
   border-top: 1px solid black;
-  font-size:13px;
+  font-size:12px;
   p{
     padding:0;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 50px;
   }
 }
 .feedback{
   a{
     text-decoration: none;
-    padding:5px 10px;
-    border: 2px solid black;
+    padding: 5px 15px;
+    padding-bottom: 5px;
+    border: 1px solid black;
     border-bottom:none;
     background:#f9f9ea;
     top:50%;
     right:-73px;
     z-index:999;
-    font-size:24px;
+    font-size:23px;
     position: fixed;
     display: block;
     -webkit-transform: rotate(270deg);
@@ -107,5 +135,8 @@ footer{
     -ms-transform: rotate(270deg);
     -o-transform: rotate(270deg);
     transform: rotate(270deg);
+    span{
+      border-bottom:1px dotted #52a1b4;
+    }
   }
 }

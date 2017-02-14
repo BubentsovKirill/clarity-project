@@ -97,7 +97,7 @@
                 <nav class="nav-mail">
                     <ul>
                         <li class="nav-mail-inbox">
-                            <div class="nav-mail-decor"></div>
+                            <div class="nav-mail-decor-active"></div>
                             <b>Inbox</b><span> (10)</span>
                         </li>
                         <li class="nav-mail-sent">
@@ -339,5 +339,10 @@
 </div>
 <div id="overlay"></div>
 <script src="js/script.min.js"></script>
+<script>
+    jQuery(document).ready(function(){
+        Layout.init();
+    });
+</script>
 </body>
 </html>

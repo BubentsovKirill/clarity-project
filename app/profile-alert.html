@@ -234,10 +234,10 @@
 <div id="modal-status" class="modal-div">
     <span class="modal-close"></span>
     <h2>Whats on your mind (max. 100 characters):</h2>
-    <form action="">
-        <input type="text" required>
+    <form action="" name="status">
+        <input type="text" class="value" value="" required>
         <br>
-        <input type="submit" value="Ok">
+        <input type="submit" value="Ok" class="done">
         <input type="submit" value="Cancel" class="modal-button-close">
     </form>
 </div>
@@ -257,7 +257,7 @@
     <h2>Support service</h2>
     <form action="">
         <label for="subject">Subject</label>
-        <input type="text" id="subject" require>
+        <input type="text" id="subject" required>
         <label for="message">Message</label>
         <textarea id="message" required></textarea>
         <input type="submit" value="Send">
@@ -265,5 +265,10 @@
 </div>
 <div id="overlay"></div>
 <script src="js/script.min.js"></script>
+<script>
+    jQuery(document).ready(function(){
+        Layout.init();
+    });
+</script>
 </body>
 </html>

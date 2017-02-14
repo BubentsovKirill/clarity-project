@@ -18,6 +18,7 @@
     "normalize-scss": "^3.0.3",
     "jquery": "^3.1.1",
     "jquery-colorbox": "colorbox#^1.6.4",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "jquery-ui": "^1.12.1"
   }
 }

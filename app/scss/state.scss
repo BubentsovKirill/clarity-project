@@ -107,19 +107,29 @@ a:hover{
 }
 .nav-mail {
   .nav-mail-inbox{
-    .nav-mail-decor{
+    .nav-mail-decor-active{
       background: url("../img/decors.png") no-repeat -143px -125px;
+    }
+    .nav-mail-decor{
+      background: url("../img/decors.png") no-repeat -78px -125px;
     }
   }
   .nav-mail-sent{
     .nav-mail-decor{
       background: url("../img/decors.png") no-repeat -85px -160px;
     }
+    .nav-mail-decor-active{
+      background: url("../img/decors.png") no-repeat -140px -160px;
+    }
   }
   .nav-mail-system{
     .nav-mail-decor{
       margin: 0px auto;
       background: url("../img/sys_msg.png") no-repeat 0px 0px;
+    }
+    .nav-mail-decor-active{
+      margin: 0px auto;
+      background: url("../img/sys_msg_active.png") no-repeat 0px 0px;
     }
   }
 
@@ -156,42 +166,3 @@ a:hover{
   background: url(../img/decors.png) no-repeat -140px -100px;
 }
 
-.alert{
-  position: fixed;
-  top:0;
-  height:50px;
-  width:100%;
-  z-index:10;
-  background: rgba(42, 45, 50, 0.75);
-  margin: 0 -20px;
-  .alert-icon{
-    float: left;
-    width:50px;
-    height:100%;
-    background: rgba(42, 45, 50, 0.9);
-    img{
-      padding-top: 12px;
-      margin: 0px auto;
-      display: block;
-    }
-  }
-  .alert-text{
-    float: left;
-    p{
-      padding: 0 0 0 20px;
-      z-index: 10;
-      color: #fff;
-    }
-  }
-  .close{
-    display: block;
-    position: absolute;
-    top: 13px;
-    right: 20px;
-    font-size: 20px;
-    color: #fff;
-  }
-  .close:hover{
-    color: #ccc;
-  }
-}

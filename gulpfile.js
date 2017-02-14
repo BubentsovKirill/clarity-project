@@ -12,7 +12,6 @@ var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
 var imageminPngquant = require('imagemin-pngquant');
 
-
 gulp.task('scss', function(){
     return gulp.src('app/scss/main.scss')
         .pipe(sass())
@@ -32,7 +31,6 @@ gulp.task('copy', function(){
     return gulp.src('app/libs/font-awesome/fonts/**.*')
         .pipe(gulp.dest('app/fonts/'))
 });
-
 
 gulp.task('js',function(){
     return gulp.src(['app/libs/jquery/dist/jquery.js',

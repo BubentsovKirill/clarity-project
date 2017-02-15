@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+<div class="alert">
+    <div class="alert-icon">
+        <img src="img/ntf_popup.png" alt="">
+    </div>
+    <div class="alert-text">
+        <p></p>
+    </div>
+    <a href="#" class="close">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+</div>
 <div class="wrapper">
     <header>
         <ul class="language-items">
@@ -118,12 +129,17 @@
                 <nav class="album-nav">
                     <ul>
                         <li>Name-album &mdash;</li>
-                        <li><a href="#">Add photo</a></li>
+                        <li><a href="#">
+                            <form action="">
+                                <label for="add-photo">Add hoto</label>
+                                <input type="file" style="display:none" id="add-photo">
+                            </form>
+                        </a></li>
                         <li><a href="#" class="edit-album-link">Edit album</a></li>
                         <li><a href="#modal-album-delete" class="open-modal">Delete Album</a></li>
                     </ul>
                 </nav>
-                <form action="" class="edit-album">
+                <form action="" id="edit-album">
                     <table>
                         <tr>
                             <td>
@@ -146,7 +162,7 @@
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <input type="submit" value="Save">
+                                <input type="submit" value="Save" class="done">
                                 <input type="submit" value="Cancel" class="add-photo-cancel">
                             </td>
                         </tr>
@@ -239,29 +255,35 @@
     <div id="modal-album-delete" class="modal-div">
         <span class="modal-close"></span>
         <h2>Delete album with all photos?</h2>
-        <input type="submit" value="Ok">
-        <input type="submit" value="Cancel" class="modal-button-close">
+        <form action="">
+            <input type="submit" value="Ok" class="delete-album">
+            <input type="submit" value="Cancel" class="modal-button-close">
+        </form>
     </div>
     <div id="modal-photo-delete" class="modal-div">
         <span class="modal-close"></span>
         <h2>Do you really want to delete this image?</h2>
-        <input type="submit" value="Ok">
-        <input type="submit" value="Cancel" class="modal-button-close">
+        <form action="">
+            <input type="submit" value="Ok" class="delete-photo">
+            <input type="submit" value="Cancel" class="modal-button-close">
+        </form>
     </div>
     <div id="modal-photo-edit" class="modal-div">
         <span class="modal-close"></span>
         <h2>Change the title</h2>
-        <input type="text" required>
-        <input type="submit" value="Ok">
-        <input type="submit" value="Cancel" class="modal-button-close">
+        <form action="">
+            <input type="text" required class="value">
+            <input type="submit" value="Ok" class="done">
+            <input type="submit" value="Cancel" class="modal-button-close">
+        </form>
     </div>
     <div id="modal-status" class="modal-div">
         <span class="modal-close"></span>
         <h2>Whats on your mind (max. 100 characters):</h2>
-        <form action="">
-            <input type="text" required>
+        <form action="" name="status">
+            <input type="text" class="value" value="" required>
             <br>
-            <input type="submit" value="Ok">
+            <input type="submit" value="Ok" class="done">
             <input type="submit" value="Cancel" class="modal-button-close">
         </form>
     </div>
@@ -272,12 +294,17 @@
             <label for="subject">Subject</label>
             <input type="text" id="subject" required>
             <label for="message">Message</label>
-            <textarea id="message" required></textarea>
-            <input type="submit" value="Send">
+            <textarea id="message" class="value" value="" required></textarea>
+            <input type="submit" value="Send" class="done">
         </form>
     </div>
     <div id="overlay"></div>
 </div>
 <script src="js/script.min.js"></script>
+<script>
+    jQuery(document).ready(function(){
+        Layout.init();
+    });
+</script>
 </body>
 </html>

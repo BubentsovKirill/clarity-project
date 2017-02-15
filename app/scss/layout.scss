@@ -1056,7 +1056,7 @@ ol {
   -webkit-border-radius:8px;
   -moz-border-radius:8px;
   border-radius:8px;
-  padding: 35px 25px;
+  padding: 35px 25px 20px;
   .message-avator{
     float: left;
     width:160px;
@@ -1082,7 +1082,145 @@ ol {
     width:500px;
     margin: 0px 0 0 20px;
     padding: 0 10px;
-    font-size:18px;
+    font-size:17px;
+  }
+  .message-title{
+    widht:100%;
+    text-align: right;
+    p{
+      font-style: italic;
+      margin: 20px 0 0 0;
+    }
+  }
+}
+.message-repetition{
+  margin-top: 35px;
+  border: 1px solid #000;
+  width:700px;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  border-radius:8px;
+  padding: 35px 25px 20px;
+  .message-avator{
+    float: left;
+    width:142px;
+    div{
+      width: 90%;
+      height: 90%;
+      padding:8px;
+      background-color: #fff;
+      -webkit-box-shadow: 0px 2px 3px 0px rgba(23, 16, 16, 0.85);
+      -moz-box-shadow: 0px 2px 3px 0px rgba(23, 16, 16, 0.85);
+      box-shadow: 0px 2px 3px 0px rgba(23, 16, 16, 0.85);
+      img{
+        padding: 0;
+        margin-left: 23px;
+        margin-top: 22px;
+        margin-bottom: 17px;
+        border: 1px solid #000;
+      }
+    }
+  }
+  .message-text{
+    position: relative;
+    float: left;
+    width:500px;
+    margin: 0px 0 0 30px;
+    padding: 0 10px;
+    font-size:16px;
+    form{
+      label{
+        margin-right:163px;
+      }
+      textarea{
+        resize: none;
+        height:260px;
+        boder:1px solid black;
+      }
+    }
+    ul{
+      li{
+        margin-right: 5px;
+        display: inline-block;
+        a{
+          display: block;
+          width:30px;
+          height:30px;
+          border:1px solid transparent;
+          img{
+            padding-top: 6px;
+            width:20px;
+            text-align: center;
+            display: block;
+            margin: 0px auto;
+          }
+        }
+        a:hover{
+          border:1px solid #000;
+        }
+      }
+      li:nth-child(4n){
+        margin-right: 0;
+      }
+    }
+    textarea{
+      width:99%;
+      resize: none;
+      height:270px;
+      border:1px solid black;
+    }
+    #smiles{
+      display: none;
+      border:1px solid black;
+    }
+    .photo-box{
+      display: none;
+      outline: 1px solid #aaa;
+      border: 4px solid #fff;
+      margin: 10px 0 10px 0;
+      max-height:220px;
+      overflow: auto;
+      background: #fff;
+      padding:20px 10px;
+      ul{
+        margin-right:65px;
+        li{
+          position: relative;
+          width:30%;
+          margin-right: 10px;
+          margin-bottom: 20px;
+          .photo-box-item{
+            margin: 0px auto;
+            height:100px;
+            width:100px;
+            background-position: center;
+            background-size: cover;
+            -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.65);
+            -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.65);
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.65);
+          }
+          .photo-box-item-delete{
+            cursor: pointer;
+            top: -4px;
+            right: -21px;
+            position: absolute;
+            display: block;
+            width:30px;
+            height:30px;
+            background: url('../img/icon/close_small.png') no-repeat 0 0;
+          }
+        }
+      }
+    }
+    .photo-box:before{
+      top: 36px;
+      left: 78px;
+      content: '';
+      position: absolute;
+      width:23px;
+      height:12px;
+      background: url('../img/popupbox_tail.gif') no-repeat 0 0;
+    }
   }
   .message-title{
     widht:100%;
@@ -1094,6 +1232,7 @@ ol {
   }
 }
 .my-message{
+  position: relative;
   margin-top: 20px;
   width:700px;
   border:1px solid black;
@@ -1122,6 +1261,56 @@ ol {
         border:1px solid #000;
       }
     }
+    li:nth-child(4n){
+      margin-right: 0;
+    }
+  }
+  .photo-box{
+    display: none;
+    outline: 1px solid #aaa;
+    border: 4px solid #fff;
+    margin: 10px 0 10px 0;
+    max-height:220px;
+    overflow: auto;
+    background: #fff;
+    padding:20px 10px;
+    ul{
+      margin-right:65px;
+      li{
+        position: relative;
+        width:22%;
+        margin-bottom: 10px;
+        .photo-box-item{
+          margin: 0px auto;
+          height:100px;
+          width:100px;
+          background-position: center;
+          background-size: cover;
+          -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.65);
+          -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.65);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.65);
+        }
+        .photo-box-item-delete{
+          cursor: pointer;
+          top: -4px;
+          right: -17px;
+          position: absolute;
+          display: block;
+          width:30px;
+          height:30px;
+          background: url('../img/icon/close_small.png') no-repeat 0 0;
+        }
+      }
+    }
+  }
+  .photo-box:before{
+    top: 56px;
+    left: 106px;
+    content: '';
+    position: absolute;
+    width:23px;
+    height:12px;
+    background: url('../img/popupbox_tail.gif') no-repeat 0 0;
   }
   .textarea-block{
     border:1px solid black;
@@ -1167,7 +1356,7 @@ ol {
   width:250px;
   background: none repeat scroll 0 0 #e2e7e9;
   border-radius: 8px 8px 8px 8px;
-  margin-top: 150px;
+  margin-top: 116px;
   padding: 20px 25px 10px 25px;
   color: #1B2B32;
   border:1px solid #1B2B32;

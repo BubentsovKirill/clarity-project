@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+<div class="alert">
+    <div class="alert-icon">
+        <img src="img/ntf_popup.png" alt="">
+    </div>
+    <div class="alert-text">
+        <p>Status saved</p>
+    </div>
+    <a href="#" class="close">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+</div>
 <div class="wrapper">
     <header>
         <ul class="language-items">
@@ -76,7 +87,7 @@
                 <p>Active Member status till — 07/04/2017</p>
                 <p><a href="psychology.html"><i>Psychological portrait</i></a></p>
                 <div class="status">
-                    <span>Loremdasdasdassdf sdf sdf sdsdf sdf asd a</span>
+                    <span>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem </span>
                 </div>
             </div>
         </div>
@@ -96,7 +107,7 @@
                 </nav>
                 <div class="name-title">
                     <div class="avator">
-                        <a href="#modal-edit-avator" class="avator-man open-modal">
+                        <a href="#modal-edit-img" class="avator-man open-modal">
                             <img src="img/usp_man.gif" alt="man">
                             <div class="avator-overlay">
                                 <span>
@@ -110,9 +121,9 @@
                     <div class="username-container">
                         <h2>Men-For-You  <a href="#modal-status" class="open-modal" >(<span>update status</span>)</a></h2>
                         <div class="status">
-                        <span>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.quid aspernatur
-                        </span>
+                            <span>
+                                lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -223,30 +234,30 @@
 <div id="modal-status" class="modal-div">
     <span class="modal-close"></span>
     <h2>Whats on your mind (max. 100 characters):</h2>
-    <form action="">
-        <input type="text" required>
+    <form action="" name="status">
+        <input type="text" class="value" value="" required>
         <br>
-        <input type="submit" value="Ok">
+        <input type="submit" value="Ok" class="done">
         <input type="submit" value="Cancel" class="modal-button-close">
     </form>
 </div>
-<div id="modal-edit-avator" class="modal-div">
+<div id="modal-edit-img" class="modal-div">
     <span class="modal-close"></span>
     <h2>Edit this photo</h2>
     <div class="photo-block">
-        <img src="img/usp_man.gif" alt="" width="300" height="300">
+        <img src="img/usp_man.gif" alt="" width="300" height="300" class="img">
         <a href="#" class="rotate">
             <img src="img/rotate_image.png" alt="">
         </a>
     </div>
-    <input type="submit" value="Done">
+    <input type="submit" value="Done" class="add-avator">
 </div>
 <div id="modal-support" class="modal-div">
     <span class="modal-close"></span>
     <h2>Support service</h2>
     <form action="">
         <label for="subject">Subject</label>
-        <input type="text" id="subject" require>
+        <input type="text" id="subject" required>
         <label for="message">Message</label>
         <textarea id="message" required></textarea>
         <input type="submit" value="Send">
@@ -254,5 +265,10 @@
 </div>
 <div id="overlay"></div>
 <script src="js/script.min.js"></script>
+<script>
+    jQuery(document).ready(function(){
+        Layout.init();
+    });
+</script>
 </body>
 </html>

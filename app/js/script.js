@@ -1,4 +1,25 @@
 var Layout = function () {
+    //popovers
+    var popovers = function(){
+        $('.percent').popover({
+            trigger: 'hover',
+            placement: 'top'
+        });
+    };
+
+    //choose foto
+    var chooseFoto = function(){
+        var item = $('.gallery-files li');
+        item.click(function(){
+            var checkbox = $(this).find('input[type="checkbox"]');
+                if(checkbox.is(":checked")){
+                    checkbox.attr('checked',false)
+                }
+                else{
+                    checkbox.attr('checked',true)
+                }
+        })
+    };
 
     //show smiles
     var showSmiles = function(){
@@ -66,6 +87,9 @@ var Layout = function () {
             var value = $(form).children('.value');
             var deletePhoto = $(form).children('.delete-photo');
             var deleteAlbum = $(form).children('.delete-album');
+            var addAvator = $(div).children('.add-avator');
+            var addImage = $(div).children('.add-image');
+
 
             done.click(function(event){
                 event.preventDefault();
@@ -83,10 +107,11 @@ var Layout = function () {
                     runAlert();
                 }
                 else{
-                    console.log('нет данных');
+                    console.log('dont have value');
                 }
             });
 
+            var deletePhoto = $(form).children('.delete-photo');
             deletePhoto.click(function(event){
                 event.preventDefault();
                     closeModal();
@@ -101,13 +126,33 @@ var Layout = function () {
                 runAlert();
             });
 
+            addAvator.click(function(event){
+                event.preventDefault();
+                closeModal();
+                $('.alert .alert-text p').text('Avator seved.');
+                runAlert();
+            });
+
+            addImage.click(function(event){
+                event.preventDefault();
+                closeModal();
+                $('.alert .alert-text p').text('Image uploaded.');
+                runAlert();
+            });
+
+            var addPhotoInMessage = $('#modal-gallery-files input[type="submit"]');
+            addPhotoInMessage.click(function(event){
+                event.preventDefault();
+                if($('.gallery-files input[type="checkbox"]').is(":checked")){
+                    closeModal();
+                    $('.photo-box').css('display','block');
+                }
+            });
         });
 
         var editAlbum = $('#edit-album .done');
         var albumName = $('#edit-album #album-title');
         editAlbum.click(function(event){
-            console.log('1');
-            console.log(albumName);
             event.preventDefault();
             if($(albumName).val() !== '' && $(albumName) !== undefined){
                 $('.alert .alert-text p').text('Album saved.');
@@ -119,8 +164,6 @@ var Layout = function () {
         close.click(function () {
             closeModal();
         });
-
-
     };
 
     //tabs visitors and settings
@@ -166,13 +209,19 @@ var Layout = function () {
                 $(this).css('transform', tr + ' ' + val);
             });
         };
-        $('#modal-edit-avator .rotate').click(function (event) {
+        $('#modal-edit-img .rotate').click(function (event) {
             event.preventDefault();
-            $('#modal-edit-avator .avator').addTransform('rotate(90deg)');
+            $('#modal-edit-img .img').addTransform('rotate(90deg)');
         });
     };
 
     return {
+        initPopovers : function(){
+            popovers();
+        },
+        initChooseFoto : function(){
+            chooseFoto();
+        },
         initShowSmiles : function(){
             showSmiles();
         },
@@ -192,6 +241,8 @@ var Layout = function () {
             transformImg();
         },
         init: function () {
+            this.initPopovers();
+            this.initChooseFoto();
             this.initShowSmiles();
             this.initModalWindows();
             this.initTabWindows();
@@ -200,7 +251,6 @@ var Layout = function () {
             this.initTransformImg();
         }
     };
-
 }();
 
 

@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>Inbox -</title>
+    <title>History -</title>
     <link rel="icon" type="image/ico" href="img/heart-icon.ico">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/script.min.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            Layout.init();
+        });
+    </script>
 </head>
 <body>
 <div class="wrapper">
@@ -98,52 +104,223 @@
                     <ul>
                         <li class="nav-mail-inbox">
                             <div class="nav-mail-decor"></div>
-                            <a href="#">Inbox</a>
+                            <a href="#">Inbox</a><span> (10)</span>
                         </li>
                         <li class="nav-mail-sent">
                             <div class="nav-mail-decor"></div>
                             <a href="#">Sent</a><span> (1010)</span>
                         </li>
-                        <li class="nav-mail-system">
+                        <li class="nav-mail-user">
                             <div class="nav-mail-decor"></div>
-                            <a href="#">System messages</a><span> (10)</span>
+                            <b>User_name</b>
                         </li>
                     </ul>
                 </nav>
+                <div class="message-history">
+                    <div class="message-history-item">
+                        <a href="#" class="show-attachment"></a>
+                        <p class="item-info">
+                            <a href="#">User-name</a>, № 611454, yesterday at 17:50
+                        </p>
+                        <div class="avator-block">
+                            <div class="avator">
+                                <img src="img/usp_man.gif" alt="">
+                            </div>
+                        </div>
+                        <div class="message-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias aperiam eius
+                            eligendi eos error eum labore quae quam quidem!
+                            <div class="message-text-line"></div>
+                            <ul class="message-img">
+                                <li>
+                                    <a href="img/1.jpg" class="cbox" rel="gal">
+                                        <div style="background-image: url('img/1.jpg')"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="img/album-title.jpeg" class="cbox" rel="gal">
+                                        <div style="background-image: url('img/album-title.jpeg')"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="img/1.jpg" class="cbox" rel="gal">
+                                        <div style="background-image: url('img/1.jpg')"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="img/album-title.jpeg" class="cbox" rel="gal">
+                                        <div style="background-image: url('img/album-title.jpeg')"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="img/album-title.jpeg" class="cbox" rel="gal">
+                                        <div style="background-image: url('img/album-title.jpeg')"></div>
+                                    </a>
+                                </li>
+                                <script>
+                                    $(document).ready(function () {
+                                        $("a.cbox").colorbox({
+                                            current: "{current}/{total}",
+                                            maxWidth: 600,
+                                            maxHeight: 600,
+                                            escKey: true
+                                        });
+                                    });
+                                </script>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="message-history-item">
+                        <a href="#" class="show-attachment"></a>
+                        <p class="item-info">
+                            <a href="#">User-name</a>, № 611454, yesterday at 17:50
+                        </p>
+                        <div class="avator-block">
+                            <div class="avator">
+                                <img src="img/usp_man.gif" alt="">
+                            </div>
+                        </div>
+                        <div class="message-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias aperiam eius
+                            eligendi eos error eum labore quae quam quidem!
+                            <div class="message-text-line"></div>
+                            <ul class="message-img">
+                                <li>
+                                    <a href="img/album-title.jpeg" class="cbox" rel="gal-1">
+                                        <div style="background-image: url('img/album-title.jpeg')"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="img/album-title.jpeg" class="cbox" rel="gal-1">
+                                        <div style="background-image: url('img/album-title.jpeg')"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="img/album-title.jpeg" class="cbox" rel="gal-1">
+                                        <div style="background-image: url('img/album-title.jpeg')"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="img/album-title.jpeg" class="cbox" rel="gal-1">
+                                        <div style="background-image: url('img/album-title.jpeg')"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="img/1.jpg" class="cbox" rel="gal-1">
+                                        <div style="background-image: url('img/1.jpg')"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="img/album-title.jpeg" class="cbox" rel="gal-1">
+                                        <div style="background-image: url('img/album-title.jpeg')"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="img/album-title.jpeg" class="cbox" rel="gal-1">
+                                        <div style="background-image: url('img/album-title.jpeg')"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="img/1.jpg" class="cbox" rel="gal-1">
+                                        <div style="background-image: url('img/1.jpg')"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="img/album-title.jpeg" class="cbox" rel="gal-1">
+                                        <div style="background-image: url('img/album-title.jpeg')"></div>
+                                    </a>
+                                </li>
+                                <script>
+                                    $(document).ready(function () {
+                                        $("a.cbox").colorbox({
+                                            current: "{current}/{total}",
+                                            maxWidth: 600,
+                                            maxHeight: 600,
+                                            escKey: true
+                                        });
+                                    });
+                                </script>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="message-history-item">
+                        <p class="item-info">
+                            <a href="#">User-name</a>, № 611454, yesterday at 17:50
+                        </p>
+                        <div class="avator-block">
+                            <div class="avator">
+                                <img src="img/usp_man.gif" alt="">
+                            </div>
+                        </div>
+                        <div class="message-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto dolore dolorem
+                            dolorum
+                            ea eaque earum, error eum iure laborum magnam, mollitia, omnis quibusdam sapiente temporibus
+                            ut velit voluptas? Ad, adipisci explicabo fugit inventore nemo nihil odio, odit officiis
+                            perferendis quam quos, rem repudiandae sunt temporibus totam vel veniam voluptatem?
+                        </div>
+                    </div>
+
+                    <div class="message-history-item">
+                        <p class="item-info">
+                            <a href="#">User-name</a>, № 611454, yesterday at 17:50
+                        </p>
+                        <div class="avator-block">
+                            <div class="avator">
+                                <img src="img/usp_man.gif" alt="">
+                            </div>
+                        </div>
+                        <div class="message-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto dolore dolorem
+                            dolorum
+                        </div>
+                    </div>
+
+                    <ul class="inbox-pagination">
+                        <li>Pages:</li>
+                        <li style="display: none;"><a href="#">First</a></li>
+                        <li style="display: none;"><a href="#">Previous </a></li>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">Next</a></li>
+                        <li><a href="#">Last</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <div class="feedback">
+            <a href="#modal-support" class="open-modal">
+                <span>Support service</span>
+            </a>
+        </div>
+        <footer>
+            <p>© 2010–2017 dating.clarity-project.net</p>
+            <p>
+                <a href="#">Terms and Conditions </a>
+                <br>
+                <a href="#">Dating safety tips</a>
+            </p>
+        </footer>
     </div>
-    <div class="feedback">
-        <a href="#modal-support" class="open-modal">
-            <span>Support service</span>
-        </a>
+    <div id="modal-support" class="modal-div">
+        <span class="modal-close"></span>
+        <h2>Support service</h2>
+        <form action="">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" required>
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+            <input type="submit" value="Send">
+        </form>
     </div>
-    <footer>
-        <p>© 2010–2017 dating.clarity-project.net</p>
-        <p>
-            <a href="#">Terms and Conditions </a>
-            <br>
-            <a href="#">Dating safety tips</a>
-        </p>
-    </footer>
-</div>
-<div id="modal-support" class="modal-div">
-    <span class="modal-close"></span>
-    <h2>Support service</h2>
-    <form action="">
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" required>
-        <label for="message">Message</label>
-        <textarea id="message" required></textarea>
-        <input type="submit" value="Send">
-    </form>
 </div>
 <div id="overlay"></div>
-<script src="js/script.min.js"></script>
-<script>
-    jQuery(document).ready(function(){
-        Layout.init();
-    });
-</script>
 </body>
 </html>

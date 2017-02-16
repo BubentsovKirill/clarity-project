@@ -4,26 +4,23 @@ var Layout = function () {
     var favorite = function(){
         var link = $('#favorite');
         $(link).find('a').click(function(event){
+            event.preventDefault();
             if($(this).hasClass('add')){
-                event.preventDefault();
                 $(this).text('Remove from favorites')
                     .removeClass('add')
                     .addClass('remove');
-                $(link).find('span').css({
-                    'background':'url("../img/icon/fav_remove.png") no-repeat',
-                    'background-position' : '0 0',
-                    'left' : '70px'
-                })
+                $(link).children('span')
+                    .removeClass('add-s')
+                    .addClass('remove-s');
             }
+
             else{
                 $(this).text('Add to favorites')
                     .removeClass('remove')
                     .addClass('add');
-                $(link).find('span').css({
-                    'background':'url("../img/icon/fav_add.png") no-repeat',
-                    'background-position' : '0 0',
-                    'left' : '45px'
-                })
+                $(link).children('span')
+                    .removeClass('remove-s')
+                    .addClass('add-s');
             }
         });
     };

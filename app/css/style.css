@@ -917,38 +917,30 @@ header {
     position: relative; }
     .left-column .name-title .avator .avator-overlay {
       display: none;
-      width: 140px;
-      height: 140px;
+      width: 100%;
+      height: 100%;
       background: #f9f9ea;
       position: absolute;
-      top: 8px;
-      left: 8px;
+      top: 0px;
+      left: 0px;
       opacity: 0.9; }
       .left-column .name-title .avator .avator-overlay span {
+        top: 30%;
         display: block;
         text-align: center;
-        padding: 40px 0 0 0;
         font-style: italic;
         font-size: 20px;
+        position: relative;
         color: #52a1b4; }
   .left-column .name-title .avator:hover .avator-overlay {
     display: block; }
-  .left-column .name-title .avator-man {
+  .left-column .name-title .avator {
     display: block;
     float: left; }
-    .left-column .name-title .avator-man img {
+    .left-column .name-title .avator img {
       display: block;
-      height: 140px;
-      width: 140px;
-      border: 8px #fff solid;
-      box-shadow: 3px 5px 10px #888888; }
-  .left-column .name-title .avator-woman {
-    display: block;
-    float: left; }
-    .left-column .name-title .avator-woman img {
-      display: block;
-      height: 140px;
-      width: 140px;
+      max-height: 200px;
+      max-width: 200px;
       border: 8px #fff solid;
       box-shadow: 3px 5px 10px #888888; }
   .left-column .name-title:after {
@@ -1852,6 +1844,34 @@ ol {
               height: 100%; }
         .message-history .message-history-item .message-text .message-img li:nth-child(5n) {
           margin-right: 0px; }
+
+.interlocutor {
+  margin-top: 40px; }
+
+.nav-interlocutor {
+  margin-top: 2em; }
+  .nav-interlocutor li {
+    display: inline-block;
+    margin-right: 20px; }
+    .nav-interlocutor li span {
+      position: relative;
+      display: block;
+      width: 40px;
+      height: 24px;
+      background: url("../img/decors.png") no-repeat; }
+    .nav-interlocutor li .decor-1 {
+      left: 30px;
+      background-position: -80px -22px; }
+    .nav-interlocutor li .decor-2 {
+      left: 30px;
+      background-position: -80px -55px; }
+    .nav-interlocutor li .decor-3 {
+      background: url("../img/icon/fav_add.png") no-repeat;
+      background-position: 0 0;
+      left: 45px; }
+    .nav-interlocutor li .decor-4 {
+      left: 10px;
+      background-position: -80px 2px; }
 
 header:after,
 .message:after,

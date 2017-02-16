@@ -1,4 +1,34 @@
 var Layout = function () {
+
+    //add and remove from favorite
+    var favorite = function(){
+        var link = $('#favorite');
+        $(link).find('a').click(function(event){
+            if($(this).hasClass('add')){
+                event.preventDefault();
+                $(this).text('Remove from favorites')
+                    .removeClass('add')
+                    .addClass('remove');
+                $(link).find('span').css({
+                    'background':'url("../img/icon/fav_remove.png") no-repeat',
+                    'background-position' : '0 0',
+                    'left' : '70px'
+                })
+            }
+            else{
+                $(this).text('Add to favorites')
+                    .removeClass('remove')
+                    .addClass('add');
+                $(link).find('span').css({
+                    'background':'url("../img/icon/fav_add.png") no-repeat',
+                    'background-position' : '0 0',
+                    'left' : '45px'
+                })
+            }
+        });
+    };
+
+
     //popovers
     var popovers = function(){
         $('.percent').popover({
@@ -198,6 +228,14 @@ var Layout = function () {
     //colorbox
     var colorBox = function () {
         $('a.photo-link').colorbox({rel: 'gal'});
+        $(document).ready(function () {
+            $("a.cbox").colorbox({
+                current: "{current}/{total}",
+                maxWidth: 600,
+                maxHeight: 600,
+                escKey: true
+            });
+        });
     };
 
     //rotate avator
@@ -216,6 +254,9 @@ var Layout = function () {
     };
 
     return {
+        initFavorite : function(){
+            favorite();
+        },
         initPopovers : function(){
             popovers();
         },
@@ -225,22 +266,23 @@ var Layout = function () {
         initShowSmiles : function(){
             showSmiles();
         },
-        initModalWindows: function () {
+        initModalWindows: function(){
             modalWindows();
         },
-        initTabWindows: function () {
+        initTabWindows: function(){
             tabWindows();
         },
-        initAddPhotoAlbum: function () {
+        initAddPhotoAlbum: function(){
             addPhotoAlbum();
         },
-        initColorBox: function () {
+        initColorBox: function(){
             colorBox();
         },
-        initTransformImg: function () {
+        initTransformImg: function(){
             transformImg();
         },
-        init: function () {
+        init: function(){
+            this.initFavorite();
             this.initPopovers();
             this.initChooseFoto();
             this.initShowSmiles();

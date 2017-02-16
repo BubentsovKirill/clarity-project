@@ -7,12 +7,6 @@
     <title>History -</title>
     <link rel="icon" type="image/ico" href="img/heart-icon.ico">
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="js/script.min.js"></script>
-    <script>
-        jQuery(document).ready(function () {
-            Layout.init();
-        });
-    </script>
 </head>
 <body>
 <div class="wrapper">
@@ -157,16 +151,6 @@
                                         <div style="background-image: url('img/album-title.jpeg')"></div>
                                     </a>
                                 </li>
-                                <script>
-                                    $(document).ready(function () {
-                                        $("a.cbox").colorbox({
-                                            current: "{current}/{total}",
-                                            maxWidth: 600,
-                                            maxHeight: 600,
-                                            escKey: true
-                                        });
-                                    });
-                                </script>
                             </ul>
                         </div>
                     </div>
@@ -230,16 +214,6 @@
                                         <div style="background-image: url('img/album-title.jpeg')"></div>
                                     </a>
                                 </li>
-                                <script>
-                                    $(document).ready(function () {
-                                        $("a.cbox").colorbox({
-                                            current: "{current}/{total}",
-                                            maxWidth: 600,
-                                            maxHeight: 600,
-                                            escKey: true
-                                        });
-                                    });
-                                </script>
                             </ul>
                         </div>
                     </div>
@@ -322,5 +296,11 @@
     </div>
 </div>
 <div id="overlay"></div>
+<script src="js/script.min.js"></script>
+<script>
+    jQuery(document).ready(function () {
+        Layout.init();
+    });
+</script>
 </body>
 </html>

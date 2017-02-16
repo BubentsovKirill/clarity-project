@@ -132,7 +132,12 @@ a:hover{
       background: url("../img/sys_msg_active.png") no-repeat 0px 0px;
     }
   }
-
+  .nav-mail-user{
+    .nav-mail-decor{
+      margin: 0px auto;
+      background: url("../img/decors.png") no-repeat -140px -195px;
+    }
+  }
 }
 .photo-gallery {
   padding-top: 40px;

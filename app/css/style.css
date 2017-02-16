@@ -1850,6 +1850,12 @@ ol {
 
 .nav-interlocutor {
   margin-top: 2em; }
+  .nav-interlocutor #favorite .add-s {
+    background: url("../img/icon/fav_add.png") no-repeat 0 0;
+    left: 45px; }
+  .nav-interlocutor #favorite .remove-s {
+    background: url("../img/icon/fav_remove.png") no-repeat 0 0;
+    left: 70px; }
   .nav-interlocutor li {
     display: inline-block;
     margin-right: 20px; }
@@ -1865,10 +1871,6 @@ ol {
     .nav-interlocutor li .decor-2 {
       left: 30px;
       background-position: -80px -55px; }
-    .nav-interlocutor li .decor-3 {
-      background: url("../img/icon/fav_add.png") no-repeat;
-      background-position: 0 0;
-      left: 45px; }
     .nav-interlocutor li .decor-4 {
       left: 10px;
       background-position: -80px 2px; }

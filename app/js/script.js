@@ -13,7 +13,6 @@ var Layout = function () {
                     .removeClass('add-s')
                     .addClass('remove-s');
             }
-
             else{
                 $(this).text('Add to favorites')
                     .removeClass('remove')
@@ -24,7 +23,6 @@ var Layout = function () {
             }
         });
     };
-
 
     //popovers
     var popovers = function(){
@@ -225,13 +223,11 @@ var Layout = function () {
     //colorbox
     var colorBox = function () {
         $('a.photo-link').colorbox({rel: 'gal'});
-        $(document).ready(function () {
-            $("a.cbox").colorbox({
-                current: "{current}/{total}",
-                maxWidth: 600,
-                maxHeight: 600,
-                escKey: true
-            });
+        $("a.cbox").colorbox({
+            current: "{current}/{total}",
+            maxWidth: 600,
+            maxHeight: 600,
+            escKey: true
         });
     };
 

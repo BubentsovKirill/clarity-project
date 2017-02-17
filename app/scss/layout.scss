@@ -1034,18 +1034,17 @@ ol {
 }
 
 //view-message
+.message-action {
+  top: 15px;
+  font-style: italic;
+  width: 70px;
+  position: relative;
+  left: 690px;
+}
 .message-block {
   float: left;
   width: 70%;
-  .message-action {
-    top: 15px;
-    font-style: italic;
-    width: 70px;
-    position: relative;
-    left: 690px;
-  }
 }
-
 .message {
   margin-top: 35px;
   border: 1px solid #000;
@@ -1535,6 +1534,49 @@ ol {
     .decor-4{
       left:10px;
       background-position: -80px 2px;
+    }
+  }
+}
+
+//interest
+.interest-block{
+  margin-top:40px;
+  width:700px;
+  padding:20px 25px;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  border-radius:8px;
+  border:1px solid #000;
+  .avator{
+    float: left;
+    width:200px;
+    .avator-wrap{
+      img{
+        max-width:160px;
+        max-height:200px;
+        border:8px solid #fff;
+        -webkit-box-shadow: 0px 1px 5px 0px #000;
+        -moz-box-shadow: 0px 1px 5px 0px  #000;
+        box-shadow: 0px 1px 5px 0px #000;
+      }
+    }
+  }
+  .interest-items{
+    float: left;
+    width:500px;
+    li{
+      margin-right:10px;
+      margin-bottom: 10px;
+      text-align: center;
+      width:30%;
+      display: inline-block;
+      p{
+        margin: 0;
+        margin-bottom: 20px;
+      }
+    }
+    li:nth-child(3n){
+      margin-right: 0;
     }
   }
 }

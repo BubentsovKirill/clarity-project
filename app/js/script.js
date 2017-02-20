@@ -114,6 +114,7 @@ var Layout = function () {
             var deleteAlbum = $(form).children('.delete-album');
             var addAvator = $(div).children('.add-avator');
             var addImage = $(div).children('.add-image');
+            var deleteMessage = $(form).children('.delete-message');
 
 
             done.click(function(event){
@@ -148,6 +149,13 @@ var Layout = function () {
                 event.preventDefault();
                 closeModal();
                 $('.alert .alert-text p').text('Album removed.');
+                runAlert();
+            });
+
+            deleteMessage.click(function(event){
+                event.preventDefault();
+                closeModal();
+                $('.alert .alert-text p').text('Message have been deleted.');
                 runAlert();
             });
 
@@ -186,7 +194,8 @@ var Layout = function () {
             }
         });
 
-        close.click(function () {
+        close.click(function (event) {
+            event.preventDefault();
             closeModal();
         });
     };

@@ -1879,7 +1879,7 @@ ol {
 .interest-block {
   margin-top: 40px;
   width: 700px;
-  padding: 20px 25px;
+  padding: 40px 25px 20px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
@@ -1899,7 +1899,7 @@ ol {
     width: 500px; }
     .interest-block .interest-items li {
       margin-right: 10px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       text-align: center;
       width: 30%;
       display: inline-block; }
@@ -1908,6 +1908,8 @@ ol {
         margin-bottom: 20px; }
     .interest-block .interest-items li:nth-child(3n) {
       margin-right: 0; }
+    .interest-block .interest-items li:last-child {
+      margin-bottom: 0; }
 
 header:after,
 .message:after,
@@ -1943,7 +1945,7 @@ header:after,
   top: 15px;
   right: 15px; }
 
-#modal-status, #modal-support, #modal-photo-delete, #modal-photo-edit, #modal-album-delete, #modal-edit-img, #modal-gallery-files {
+#modal-status, #modal-support, #modal-photo-delete, #modal-photo-edit, #modal-album-delete, #modal-delete-system-message, #modal-edit-img, #modal-gallery-files {
   width: 600px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -1956,13 +1958,13 @@ header:after,
   margin: 0 -300px 0 -300px;
   z-index: 5;
   padding: 30px 20px; }
-  #modal-status h2, #modal-support h2, #modal-photo-delete h2, #modal-photo-edit h2, #modal-album-delete h2, #modal-edit-img h2, #modal-gallery-files h2 {
+  #modal-status h2, #modal-support h2, #modal-photo-delete h2, #modal-photo-edit h2, #modal-album-delete h2, #modal-delete-system-message h2, #modal-edit-img h2, #modal-gallery-files h2 {
     font-size: 30px;
     margin-top: 5px; }
-  #modal-status input[type="text"], #modal-support input[type="text"], #modal-photo-delete input[type="text"], #modal-photo-edit input[type="text"], #modal-album-delete input[type="text"], #modal-edit-img input[type="text"], #modal-gallery-files input[type="text"] {
+  #modal-status input[type="text"], #modal-support input[type="text"], #modal-photo-delete input[type="text"], #modal-photo-edit input[type="text"], #modal-album-delete input[type="text"], #modal-delete-system-message input[type="text"], #modal-edit-img input[type="text"], #modal-gallery-files input[type="text"] {
     width: 100%;
     margin-bottom: 20px; }
-  #modal-status input[type="submit"], #modal-support input[type="submit"], #modal-photo-delete input[type="submit"], #modal-photo-edit input[type="submit"], #modal-album-delete input[type="submit"], #modal-edit-img input[type="submit"], #modal-gallery-files input[type="submit"] {
+  #modal-status input[type="submit"], #modal-support input[type="submit"], #modal-photo-delete input[type="submit"], #modal-photo-edit input[type="submit"], #modal-album-delete input[type="submit"], #modal-delete-system-message input[type="submit"], #modal-edit-img input[type="submit"], #modal-gallery-files input[type="submit"] {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;

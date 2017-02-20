@@ -1542,7 +1542,7 @@ ol {
 .interest-block{
   margin-top:40px;
   width:700px;
-  padding:20px 25px;
+  padding:40px 25px 20px;
   -webkit-border-radius:8px;
   -moz-border-radius:8px;
   border-radius:8px;
@@ -1566,7 +1566,7 @@ ol {
     width:500px;
     li{
       margin-right:10px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       text-align: center;
       width:30%;
       display: inline-block;
@@ -1577,6 +1577,9 @@ ol {
     }
     li:nth-child(3n){
       margin-right: 0;
+    }
+    li:last-child{
+      margin-bottom: 0;
     }
   }
 }

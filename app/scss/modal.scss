@@ -99,6 +99,9 @@
     border:1px solid #ccc !important;
   }
 }
+#modal-delete-system-message{
+  @extend #modal-status;
+}
 
 #modal-edit-img{
   @extend #modal-status;

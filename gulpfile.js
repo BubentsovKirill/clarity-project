@@ -36,6 +36,7 @@ gulp.task('js',function(){
     return gulp.src(['app/libs/jquery/dist/jquery.js',
         'app/libs/bootstrap-sass/assets/javascripts/bootstrap.js',
         'app/libs/jquery-colorbox/jquery.colorbox.js',
+        'app/libs/jquery-knob/dist/jquery.knob.min.js',
         'app/js/script.js'])
         .pipe(concat('script.min.js'))
         .pipe(uglify())

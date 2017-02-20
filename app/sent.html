@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+<div class="alert">
+    <div class="alert-icon">
+        <img src="img/ntf_popup.png" alt="">
+    </div>
+    <div class="alert-text">
+        <p></p>
+    </div>
+    <a href="#" class="close">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+</div>
 <div class="wrapper">
     <header>
         <ul class="language-items">
@@ -123,7 +134,7 @@
                             </span>
                             <a href="#" class="open">Open</a>
                             <a href="#" class="history">History</a>
-                            <a href="#" class="delete">Delete</a>
+                            <a href="#modal-delete-message" class="delete open-modal">Delete</a>
                         </div>
                     </div>
                     <div class="inbox-list-item">
@@ -138,7 +149,7 @@
                             </span>
                             <a href="#" class="open">Open</a>
                             <a href="#" class="history">History</a>
-                            <a href="#" class="delete">Delete</a>
+                            <a href="#modal-delete-message" class="delete open-modal">Delete</a>
                         </div>
                     </div>
                     <div class="inbox-list-item">
@@ -153,7 +164,7 @@
                             </span>
                             <a href="#" class="open">Open</a>
                             <a href="#" class="history">History</a>
-                            <a href="#" class="delete">Delete</a>
+                            <a href="#modal-delete-message" class="delete open-modal">Delete</a>
                         </div>
                     </div>
                     <div class="inbox-list-item">
@@ -170,7 +181,7 @@
                             </span>
                             <a href="#" class="open">Open</a>
                             <a href="#" class="history">History</a>
-                            <a href="#" class="delete">Delete</a>
+                            <a href="#modal-delete-message" class="delete open-modal">Delete</a>
                         </div>
                     </div>
                     <div class="inbox-list-item">
@@ -185,7 +196,7 @@
                             </span>
                             <a href="#" class="open">Open</a>
                             <a href="#" class="history">History</a>
-                            <a href="#" class="delete">Delete</a>
+                            <a href="#modal-delete-message" class="delete open-modal">Delete</a>
                         </div>
                     </div>
                     <div class="inbox-list-item">
@@ -199,7 +210,7 @@
                             </span>
                             <a href="#" class="open">Open</a>
                             <a href="#" class="history">History</a>
-                            <a href="#" class="delete">Delete</a>
+                            <a href="#modal-delete-message" class="delete open-modal">Delete</a>
                         </div>
                     </div>
                     <div class="inbox-list-item">
@@ -214,7 +225,7 @@
                             </span>
                             <a href="#" class="open">Open</a>
                             <a href="#" class="history">History</a>
-                            <a href="#" class="delete">Delete</a>
+                            <a href="#modal-delete-message" class="delete open-modal">Delete</a>
                         </div>
                     </div>
                     <div class="inbox-list-item">
@@ -229,7 +240,7 @@
                             </span>
                             <a href="#" class="open">Open</a>
                             <a href="#" class="history">History</a>
-                            <a href="#" class="delete">Delete</a>
+                            <a href="#modal-delete-message" class="delete open-modal">Delete</a>
                         </div>
                     </div>
                     <div class="inbox-list-item">
@@ -244,7 +255,7 @@
                             </span>
                             <a href="#" class="open">Open</a>
                             <a href="#" class="history">History</a>
-                            <a href="#" class="delete">Delete</a>
+                            <a href="#modal-delete-message" class="delete open-modal">Delete</a>
                         </div>
                     </div>
                     <div class="inbox-list-item">
@@ -261,7 +272,7 @@
                             </span>
                             <a href="#" class="open">Open</a>
                             <a href="#" class="history">History</a>
-                            <a href="#" class="delete">Delete</a>
+                            <a href="#modal-delete-message" class="delete open-modal">Delete</a>
                         </div>
                     </div>
                     <div class="inbox-list-item">
@@ -276,7 +287,7 @@
                             </span>
                             <a href="#" class="open">Open</a>
                             <a href="#" class="history">History</a>
-                            <a href="#" class="delete">Delete</a>
+                            <a href="#modal-delete-message" class="delete open-modal">Delete</a>
                         </div>
                     </div>
                     <div class="inbox-list-item">
@@ -290,7 +301,7 @@
                             </span>
                             <a href="#" class="open">Open</a>
                             <a href="#" class="history">History</a>
-                            <a href="#" class="delete">Delete</a>
+                            <a href="#modal-delete-message" class="delete open-modal">Delete</a>
                         </div>
                     </div>
                 </form>
@@ -335,6 +346,13 @@
         <label for="message">Message</label>
         <textarea id="message" required></textarea>
         <input type="submit" value="Send">
+    </form>
+</div>
+<div id="modal-delete-message" class="modal-div">
+    <h2>Do you really want to delete this message?</h2>
+    <form action="">
+        <input type="submit" value="Ok" class="delete-message">
+        <input type="submit" value="Cancel" class="modal-button-close">
     </form>
 </div>
 <div id="overlay"></div>

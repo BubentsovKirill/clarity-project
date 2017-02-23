@@ -611,15 +611,21 @@ ol {
         font-style: italic;
         color: #b32e2f;
       }
-      .smg-img {
+      .msg-img {
         height: 16px;
         line-height: 16px;
         padding: 1px 1px 1px 20px;
         width: 30px;
         background: url('../img/icon/attach.png') no-repeat 0 0;
       }
-      a {
-
+      .msg-exlamention{
+        height: 16px;
+        line-height: 16px;
+        padding: 1px 1px 1px 20px;
+        width: 30px;
+        background: url('../img/icon/exlametion.png') no-repeat 0 0;
+      }
+      a{
         margin-right: 10px;
         height: 16px;
         line-height: 16px;
@@ -1171,6 +1177,9 @@ ol {
     #smiles {
       display: none;
       border: 1px solid black;
+      a{
+        text-decoration:none;
+      }
     }
     .photo-box {
       display: none;
@@ -1320,6 +1329,7 @@ ol {
       a {
         text-emphasis: none;
         display: inline-block;
+        text-decoration: none;
         img {
           width: auto;
           height: auto;

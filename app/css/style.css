@@ -1099,12 +1099,18 @@ ol {
       .inbox-list .inbox-list-item .right .new {
         font-style: italic;
         color: #b32e2f; }
-      .inbox-list .inbox-list-item .right .smg-img {
+      .inbox-list .inbox-list-item .right .msg-img {
         height: 16px;
         line-height: 16px;
         padding: 1px 1px 1px 20px;
         width: 30px;
         background: url("../img/icon/attach.png") no-repeat 0 0; }
+      .inbox-list .inbox-list-item .right .msg-exlamention {
+        height: 16px;
+        line-height: 16px;
+        padding: 1px 1px 1px 20px;
+        width: 30px;
+        background: url("../img/icon/exlametion.png") no-repeat 0 0; }
       .inbox-list .inbox-list-item .right a {
         margin-right: 10px;
         height: 16px;
@@ -1576,6 +1582,8 @@ ol {
     .message-repetition .message-text #smiles {
       display: none;
       border: 1px solid black; }
+      .message-repetition .message-text #smiles a {
+        text-decoration: none; }
     .message-repetition .message-text .photo-box {
       display: none;
       outline: 1px solid #aaa;
@@ -1700,7 +1708,8 @@ ol {
       border-bottom: 1px solid black; }
       .my-message .textarea-block #smiles a {
         text-emphasis: none;
-        display: inline-block; }
+        display: inline-block;
+        text-decoration: none; }
         .my-message .textarea-block #smiles a img {
           width: auto;
           height: auto;

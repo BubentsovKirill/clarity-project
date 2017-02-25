@@ -115,12 +115,15 @@ header {
       max-width: 380px;
       background: #52a1b4;
       border-radius: 10px;
-      padding: 5px 10px;
+      padding: 4px 0.8em 5px;
       left: 0px;
-      span {
+      p {
         color: #fff;
         font-size: 14px;
         font-style: italic;
+        line-height:15px;
+        margin:0;
+        padding: 0;
       }
     }
     .status:before {
@@ -186,7 +189,13 @@ header {
 }
 
 .main-page {
-  padding-bottom: 25px;
+  padding-bottom: 32px;
+  .logo-wrap {
+    padding-top: 10px;
+    float: left;
+    width: 20%;
+    margin: 0 4% 0 0;
+  }
 }
 
 .sign-in {
@@ -221,14 +230,34 @@ header {
 .main-page {
   .logo-wrap {
     float: left;
-    width: 33%;
-    margin-left: 33%;
+    width: 33.3%;
+    margin-left: 33.3%;
     .logo {
       width: 350px;
     }
   }
+  .language-items {
+    position: absolute;
+    width: 290px;
+    margin: 0px auto;
+    left: 0;
+    right: 0;
+    top: 90px;
+    li {
+      display: inline-block;
+      margin-right: 15px;
+      a {
+        display: block;
+        width: 25px;
+        height: 21px;
+      }
+    }
+    li:last-child {
+      margin-right: 0;
+    }
+  }
   .right-column {
-    width: 33%;
+    width: 29%;
     padding-top: 30px;
     float: left;
     .login-form {
@@ -241,13 +270,17 @@ header {
           line-height: 23px;
           font-size: 12px;
           position: absolute;
-          left: 10px;
+          left: -5px;
         }
         input {
           font-size: 14px;
+          width: 165px;
+          height: 15px;
+          font-size: 12px;
         }
       }
       a {
+        margin-left: 5px;
         font-size: 12px;
         font-style: italic;
       }
@@ -349,11 +382,10 @@ header {
   float: left;
   .left-column-wrap {
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 50px;
   }
   .nav-profile {
     font-size: 15px;
-    margin-bottom: 30px;
     li {
       display: inline-block;
       margin-right: 1.5em;
@@ -367,6 +399,7 @@ header {
     }
   }
   .name-title {
+    margin-top: 23px;
     .avator {
       position: relative;
       .avator-overlay {
@@ -416,11 +449,12 @@ header {
   }
   .username-container {
     float: left;
-    padding-left: 50px;
+    padding-left: 45px;
     h2 {
-      margin: 0 0 15px 0;
-      font-size: 30px;
+      margin: -5px 0 15px 0;
+      font-size: 32px;
       font-weight: 400;
+
       a {
         font-size: 22px;
         font-style: italic;
@@ -443,11 +477,14 @@ header {
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
       border-radius: 10px;
-      padding: 5px 10px;
-      span {
+      padding: 4px 0.8em 5px;
+      p {
         color: #fff;
         font-size: 14px;
         font-style: italic;
+        line-height:15px;
+        margin:0;
+        padding: 0;
       }
     }
     .status:before {
@@ -461,6 +498,7 @@ header {
     }
   }
   .nav-bottom {
+    font-size: 15px;
     li {
       font-style: italic;
       display: inline-block;
@@ -499,9 +537,10 @@ header {
   }
   h2 {
     font-style: italic;
-    font-size: 16px;
+    font-size: 15px;
   }
   .news-block {
+    margin-top: 20px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
@@ -533,6 +572,8 @@ header {
 }
 
 .nav-mail {
+  margin-top: 32px;
+  font-size: 15px;
   > ul {
     .nav-mail-decor {
       width: 42px;
@@ -548,6 +589,9 @@ header {
       position: relative;
       display: inline-block;
       margin-right: 1.5em;
+      b {
+        font-size: 15px;
+      }
     }
     li:last-child {
       margin-right: 0;
@@ -581,7 +625,6 @@ ol {
 }
 
 .inbox-list {
-  margin-top: 10px;
   width: 850px;
   .inbox-list-item {
     font-size: 15px;
@@ -612,35 +655,40 @@ ol {
         color: #b32e2f;
       }
       .msg-img {
+        vertical-align: middle;
         height: 16px;
         line-height: 16px;
-        padding: 1px 1px 1px 20px;
+        padding: 0px 1px 1px 20px;
         width: 30px;
         background: url('../img/icon/attach.png') no-repeat 0 0;
       }
-      .msg-exlamention{
+      .msg-exlamention {
+        vertical-align: middle;
         height: 16px;
         line-height: 16px;
-        padding: 1px 1px 1px 20px;
+        padding: 0px 1px 1px 20px;
         width: 30px;
         background: url('../img/icon/exlametion.png') no-repeat 0 0;
       }
-      a{
+      a {
         margin-right: 10px;
         height: 16px;
         line-height: 16px;
         padding: 1px 1px 1px 20px;
       }
       .open {
-        background: url('../img/icon/open.png') no-repeat 0 3px;
+        background: url('../img/icon/open.png') no-repeat 0 2px;
       }
       .history {
-        background: url('../img/icon/history.png') no-repeat 0 3px;
+        background: url('../img/icon/history.png') no-repeat 0 2px;
       }
       .delete {
-        background: url('../img/icon/basket.png') no-repeat 0 3px;
+        background: url('../img/icon/basket.png') no-repeat 0 2px;
       }
     }
+  }
+  .inbox-list-item:first-child {
+    margin-top: 7px;
   }
 }
 
@@ -694,7 +742,7 @@ ol {
   }
   .visitor-tab {
     .visitor-tab-item {
-      margin-top: 40px;
+      margin-top: 25px;
       width: 800px;
       border: 1px solid black;
       padding: 30px 30px;
@@ -702,7 +750,9 @@ ol {
       -moz-border-radius: 8px;
       border-radius: 8px;
       .visitor-user {
-        padding: 30px 0;
+        font-size: 15px;
+        padding: 10px 0;
+        margin-bottom: 30px;
         display: inline-block;
         width: 33%;
         text-align: center;
@@ -752,7 +802,7 @@ ol {
 //settings
 .settings {
   .nav-settings {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     font-size: 15px;
     li {
       display: inline-block;
@@ -774,11 +824,15 @@ ol {
   }
   .settings-tab-item {
     display: none;
+    padding-left: 15px;
   }
   .settings-tab-item.active {
     display: block;
   }
   form {
+    input {
+      margin-top: 5px;
+    }
     label {
       font-size: 15px;
       font-style: italic;
@@ -792,7 +846,7 @@ ol {
   table {
     td {
       vertical-align: top;
-      padding-bottom: 25px;
+      padding-bottom: 23px;
       span {
         font-size: 10px;
         color: #666;
@@ -804,6 +858,16 @@ ol {
     }
     td:last-child {
       padding-left: 20px;
+    }
+  }
+  .settings-tab-item {
+    td:first-child {
+      width: 230px;
+    }
+  }
+  .settings-tab-item:first-child {
+    td:first-child {
+      width: 120px;
     }
   }
 }
@@ -855,7 +919,9 @@ ol {
     border-radius: 8px;
     .member-item,
     .matches-item {
-      padding: 15px 0 15px 0;
+      font-size: 15px;
+      margin-top: 10px;
+      margin-bottom: 30px;
       display: inline-block;
       width: 33%;
       text-align: center;
@@ -1031,6 +1097,7 @@ ol {
 
 .nav-profile,
 .nav-mail {
+  padding-top: 0px;
   li {
     font-style: italic !important;
     a {
@@ -1041,57 +1108,62 @@ ol {
 
 //view-message
 .message-action {
+  font-size:15px;
   top: 15px;
   font-style: italic;
   width: 70px;
   position: relative;
-  left: 690px;
+  left: 670px;
 }
 
 .message-block {
+  position: relative;
   float: left;
-  width: 70%;
+  .message-status{
+    position: absolute;
+    right: 20px;
+    top: 50px;
+  }
 }
 
 .message {
   margin-top: 35px;
   border: 1px solid #000;
-  width: 700px;
+  width: 690px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  padding: 35px 25px 20px;
+  padding: 35px 30px;
   .message-avator {
     float: left;
     width: 160px;
-    div {
-      width: 90%;
-      height: 90%;
+    margin-right: 22px;
+    span {
+      display: inline-block;
+      position: static;
       padding: 8px;
       background-color: #fff;
       -webkit-box-shadow: 1px 1px 3px 1px rgba(23, 16, 16, 0.85);;
       -moz-box-shadow: 1px 1px 3px 1px rgba(23, 16, 16, 0.85);;
       box-shadow: 1px 1px 3px 1px rgba(23, 16, 16, 0.85);
       img {
+        display: block;
         padding: 0px;
-        margin-left: 29px;
-        margin-top: 31px;
-        margin-bottom: 31px;
-        border: 1px solid #000;
+        max-width:160px;
+        max-height:200px;
       }
     }
   }
   .message-text {
     float: left;
-    width: 500px;
+    width: 478px;
     margin: 0px 0 0 20px;
-    padding: 0 10px;
-    font-size: 17px;
+    font-size: 16px;
   }
   .message-title {
-    widht: 100%;
     text-align: right;
     p {
+      font-size:15px;
       font-style: italic;
       margin: 20px 0 0 0;
     }
@@ -1105,37 +1177,44 @@ ol {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  padding: 35px 25px 20px;
+  padding: 35px 20px 35px 30px;
+  form{
+    margin-top: -10px;
+  }
   .message-avator {
     float: left;
-    width: 142px;
-    div {
-      width: 90%;
-      height: 90%;
+    width: 160px;
+    margin-right: 22px;
+    span {
+      display: inline-block;
+      position: static;
       padding: 8px;
       background-color: #fff;
-      -webkit-box-shadow: 0px 2px 3px 0px rgba(23, 16, 16, 0.85);
-      -moz-box-shadow: 0px 2px 3px 0px rgba(23, 16, 16, 0.85);
-      box-shadow: 0px 2px 3px 0px rgba(23, 16, 16, 0.85);
+      -webkit-box-shadow: 1px 1px 3px 1px rgba(23, 16, 16, 0.85);;
+      -moz-box-shadow: 1px 1px 3px 1px rgba(23, 16, 16, 0.85);;
+      box-shadow: 1px 1px 3px 1px rgba(23, 16, 16, 0.85);
       img {
-        padding: 0;
-        margin-left: 23px;
-        margin-top: 22px;
-        margin-bottom: 17px;
-        border: 1px solid #000;
+        display: block;
+        padding: 0px;
+        max-width:160px;
+        max-height:200px;
       }
     }
   }
   .message-text {
     position: relative;
     float: left;
-    width: 500px;
-    margin: 0px 0 0 30px;
+    width: 497px;
     padding: 0 10px;
     font-size: 16px;
     form {
       label {
-        margin-right: 163px;
+        margin-right: 115px;
+        font-size: 15px;
+
+      }
+      select{
+        margin-bottom: 10px;
       }
       textarea {
         resize: none;
@@ -1173,13 +1252,6 @@ ol {
       resize: none;
       height: 270px;
       border: 1px solid black;
-    }
-    #smiles {
-      display: none;
-      border: 1px solid black;
-      a{
-        text-decoration:none;
-      }
     }
     .photo-box {
       display: none;
@@ -1221,7 +1293,7 @@ ol {
       }
     }
     .photo-box:before {
-      top: 36px;
+      top: 26px;
       left: 78px;
       content: '';
       position: absolute;
@@ -1234,21 +1306,22 @@ ol {
     widht: 100%;
     text-align: right;
     p {
+      font-size:15px;
       font-style: italic;
-      margin: 20px 0 0 0;
+      margin: 90px 0 0 0;
     }
   }
 }
 
 .my-message {
   position: relative;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 700px;
   border: 1px solid black;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  padding: 20px 25px;
+  padding:26px 25px 65px 25px;
   ul {
     li {
       margin-right: 5px;
@@ -1313,7 +1386,7 @@ ol {
     }
   }
   .photo-box:before {
-    top: 56px;
+    top: 62px;
     left: 106px;
     content: '';
     position: absolute;
@@ -1323,36 +1396,22 @@ ol {
   }
   .textarea-block {
     border: 1px solid black;
-    #smiles {
-      display: none;
-      border-bottom: 1px solid black;
-      a {
-        text-emphasis: none;
-        display: inline-block;
-        text-decoration: none;
-        img {
-          width: auto;
-          height: auto;
-          vertical-align: middle;
-        }
-      }
-    }
-    textarea {
-      margin-bottom: -4px;
-      width: 693px;
+    .reply-textarea {
+      width: 698px;
       resize: none;
-      height: 280px;
+      height: 270px;
       border: none;
+      background: #fff;
     }
   }
 }
 
 @media (max-width: 1160px) {
-  .left-column {
+  .left {
     width: 100%;
     float: none;
   }
-  .right-column {
+  .online-tr{
     position: static;
     width: 100%;
     .online-translate {
@@ -1367,16 +1426,20 @@ ol {
   width: 250px;
   background: none repeat scroll 0 0 #e2e7e9;
   border-radius: 8px 8px 8px 8px;
-  margin-top: 116px;
+  margin-top: 144px;
   padding: 20px 25px 10px 25px;
   color: #1B2B32;
   border: 1px solid #1B2B32;
   font-family: Arial, Helvetica, Verdana, Sans-serif;
+  p{
+    font-size:16px;
+
+  }
   span {
     font-weight: bold;
   }
   label {
-    font-size: 16px;
+    font-size: 14.4px;
   }
   .percent {
     background: url('../img/buttonbg.gif') repeat-x scroll left bottom #FDFDFE;
@@ -1386,7 +1449,7 @@ ol {
     border-width: 1px;
     text-align: center;
     display: inline-block;
-    font-size: 14px;
+    font-size: 12px;
     padding: 2px 7px;
     position: relative;
     top: -2px;
@@ -1401,7 +1464,7 @@ ol {
   .history,
   input[type="submit"] {
     color: #3B3E48;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     background: url('../img/buttonbg.gif') repeat-x scroll left bottom #FDFDFE;
     border-color: #DFE5EC #8E9CAE #8E9CAE #DFE5EC;
@@ -1436,22 +1499,23 @@ ol {
     -moz-border-radius: 8px;
     border-radius: 8px;
     .item-info {
+      font-size:15px;
       font-style: italic;
-      margin: 0 0 10px 0;
+      margin: 5px 0 16px 0;
     }
-    .show-attachment {
+    .sign {
       position: absolute;
       right: 20px;
-      top: 10px;
+      top: 17px;
       height: 16px;
       width: 16px;
       display: block;
-      background: url('../img/icon/attach.png') no-repeat;
+      //background: url('../img/icon/attach.png') no-repeat;
     }
     .avator-block {
       width: 160px;
       float: left;
-      margin-bottom: 50px;
+      margin-bottom: 25px;
       .avator {
         display: inline-block;
         padding: 8px;
@@ -1472,14 +1536,16 @@ ol {
       margin-left: 30px;
       .message-text-line {
         margin-top: 10px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         border-top: 1px solid #ccc;
       }
+      .text{
+        padding-top: 10px;
+      }
       .message-img {
-        margin-top: 10px;
-        margin-left: 10px;
+        margin-top: 5px;
         li {
-          margin-right: 6px;
+          margin-right: 12px;
           display: inline-block;
           margin-bottom: 10px;
           a {
@@ -1499,7 +1565,7 @@ ol {
             }
           }
         }
-        li:nth-child(5n) {
+        li:nth-child(4n) {
           margin-right: 0px;
         }
       }
@@ -1509,19 +1575,20 @@ ol {
 
 //enterlocutor
 .interlocutor {
-  margin-top: 40px;
+  margin-top: 40px !important;
 }
 
 .nav-interlocutor {
-  margin-top: 2em;
+  margin-top:20px;
+  font-size: 15px;
   #favorite {
     .add-s {
       background: url("../img/icon/fav_add.png") no-repeat 0 0;
-      left: 45px;
+      left: 40px;
     }
     .remove-s {
       background: url("../img/icon/fav_remove.png") no-repeat 0 0;
-      left: 70px;
+      left: 63px;
     }
   }
   li {
@@ -1538,11 +1605,11 @@ ol {
       background: url('../img/decors.png') no-repeat;
     }
     .decor-1 {
-      left: 30px;
+      left: 27px;
       background-position: -80px -22px;
     }
     .decor-2 {
-      left: 30px;
+      left: 27px;
       background-position: -80px -55px;
     }
     .decor-4 {
@@ -1554,32 +1621,32 @@ ol {
 
 //interest
 .interest-block {
+  font-size: 15px;
   margin-top: 40px;
-  width: 700px;
-  padding: 40px 25px 20px;
+  width: 690px;
+  padding: 35px 30px 0 30px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
   border: 1px solid #000;
-  .avator {
+  .avator-wrap {
     float: left;
-    width: 200px;
-    .avator-wrap {
-      img {
-        max-width: 160px;
-        max-height: 200px;
-        border: 8px solid #fff;
-        -webkit-box-shadow: 0px 1px 5px 0px #000;
-        -moz-box-shadow: 0px 1px 5px 0px #000;
-        box-shadow: 0px 1px 5px 0px #000;
-      }
+    width: 238px;
+    img {
+      max-width: 160px;
+      max-height: 200px;
+      border: 8px solid #fff;
+      -webkit-box-shadow: 0px 2px 6px -1px #000;
+      -moz-box-shadow: 0px 2px 6px -1px #000;
+      box-shadow: 0px 2px 6px -1px #000;
     }
   }
   .interest-items {
+    padding-top: 20px;
     float: left;
-    width: 500px;
+    width: 452px;
     li {
-      margin-right: 10px;
+      margin-right: 12px;
       margin-bottom: 15px;
       text-align: center;
       width: 30%;

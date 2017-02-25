@@ -1,0 +1,34 @@
+{
+  "name": "jquery-emojiarea",
+  "version": "0.2.0",
+  "homepage": "https://github.com/aminin/jquery-emojiarea",
+  "authors": [
+    "Anton Minin <anton.a.minin@gmail.com>"
+  ],
+  "description": "A small 6kb jQuery plugin for turning regular textareas into ones that support emojis, WYSIWYG style!",
+  "main": "jquery.emojiarea.js",
+  "keywords": [
+    "jquery",
+    "emojiarea",
+    "emotions",
+    "smiles"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.0",
+    "commit": "d05d891ed14e03255976170a1f77c9eaa00db11a"
+  },
+  "_source": "https://github.com/aminin/jquery-emojiarea.git",
+  "_target": "^0.2.0",
+  "_originalSource": "jquery-emojiarea",
+  "_direct": true
+}

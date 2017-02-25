@@ -60,6 +60,7 @@ a:hover{
     color: #1b2b32;
     font-style: italic;
     text-decoration: none;
+    font-size: 16px;
   }
   .active:hover{
     font-weight:800;
@@ -111,7 +112,7 @@ a:hover{
       background: url("../img/decors.png") no-repeat -143px -125px;
     }
     .nav-mail-decor{
-      background: url("../img/decors.png") no-repeat -78px -125px;
+      background: url("../img/decors.png") no-repeat -85px -125px;
     }
   }
   .nav-mail-sent{
@@ -171,3 +172,18 @@ a:hover{
   background: url(../img/decors.png) no-repeat -140px -100px;
 }
 
+
+//message-icons
+
+.message-translation{
+  height: 16px;
+  line-height: 16px;
+  padding: 1px 1px 1px 20px;
+  background: url('../img/icon/ot.png') no-repeat 0 0;
+}
+.message-attachment{
+  height: 16px;
+  line-height: 16px;
+  padding: 1px 1px 1px 20px;
+  background: url('../img/icon/attach.png') no-repeat 0 0;
+}

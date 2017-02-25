@@ -21,6 +21,7 @@ gulp.task('scss', function(){
 
 gulp.task('css',['scss'], function(){
     return gulp.src(['app/libs/font-awesome/css/font-awesome.css',
+        'app/libs/jquery-emojiarea/jquery.emojiarea.css',
         'app/css/style.css'])
         .pipe(concat('style.min.css'))
         .pipe(cssnano())
@@ -83,7 +84,7 @@ gulp.task('build',['clear','img','scss','js'],function(){
         .pipe(gulp.dest('dist'))
     var buildCss = gulp.src(['tmp/css/*.css'])
         .pipe(gulp.dest('dist/css'))
-    var buildJs = gulp.src('tmp/js/*.js')
+    var buildJs = gulp.src(['tmp/js/*.js','app/js/jquery.emojiarea.js'])
         .pipe(gulp.dest('dist/js'))
     var buildFonts = gulp.src('app/fonts/*.*')
         .pipe(gulp.dest('dist/fonts/'))

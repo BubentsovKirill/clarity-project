@@ -1,11 +1,10 @@
 var Layout = function () {
-
     //add and remove from favorite
-    var favorite = function(){
+    var favorite = function () {
         var link = $('#favorite');
-        $(link).find('a').click(function(event){
+        $(link).find('a').click(function (event) {
             event.preventDefault();
-            if($(this).hasClass('add')){
+            if ($(this).hasClass('add')) {
                 $(this).text('Remove from favorites')
                     .removeClass('add')
                     .addClass('remove');
@@ -13,7 +12,7 @@ var Layout = function () {
                     .removeClass('add-s')
                     .addClass('remove-s');
             }
-            else{
+            else {
                 $(this).text('Add to favorites')
                     .removeClass('remove')
                     .addClass('add');
@@ -25,7 +24,7 @@ var Layout = function () {
     };
 
     //popovers
-    var popovers = function(){
+    var popovers = function () {
         $('.percent').popover({
             trigger: 'hover',
             placement: 'top'
@@ -33,31 +32,32 @@ var Layout = function () {
     };
 
     //choose foto
-    var chooseFoto = function(){
+    var chooseFoto = function () {
         var item = $('.gallery-files li');
-        item.click(function(){
+        item.click(function () {
             var checkbox = $(this).find('input[type="checkbox"]');
-                if(checkbox.is(":checked")){
-                    checkbox.attr('checked',false)
-                }
-                else{
-                    checkbox.attr('checked',true)
-                }
+            if (checkbox.is(":checked")) {
+                checkbox.attr('checked', false)
+            }
+            else {
+                checkbox.attr('checked', true)
+            }
         })
     };
 
     //show smiles
-    var showSmiles = function(){
-      $('.insert-smiles').click(function(event){
-          event.preventDefault();
-          $('#smiles').toggle()
-          if($('#smile').is(":visible")){
-              $('#smile').css('border-bottom','1px solid black');
-          }
-          else{
-              $('#smile').css('border-bottom','0px solid black');
-          }
-      });
+    var showSmiles = function () {
+        $('.insert-smiles').click(function (event) {
+            event.preventDefault();
+            $('#smiles').toggle(function () {
+                if ($('#smile').is(":visible")) {
+                    $('#smile').css('height', 'auto').fadeOut(1000)
+                }
+                else {
+                    $('#smile').css('height', 0).fadeIn(1000)
+                }
+            });
+        });
     };
 
     //modal windows
@@ -81,7 +81,7 @@ var Layout = function () {
             }).fadeOut(500);
         };
 
-        function runAlert(){
+        function runAlert() {
             setTimeout(showAlert, 1000);
             closeAlert.click(hideAlert);
             setTimeout(hideAlert, 7000);
@@ -117,56 +117,56 @@ var Layout = function () {
             var deleteMessage = $(form).children('.delete-message');
 
 
-            done.click(function(event){
+            done.click(function (event) {
                 event.preventDefault();
-                if($(value).val() !== undefined && $(value).val() !== '' ){
+                if ($(value).val() !== undefined && $(value).val() !== '') {
                     closeModal();
-                    if(div == '#modal-status' ){
+                    if (div == '#modal-status') {
                         $('.alert .alert-text p').text('Status saved.');
                     }
-                    else if( div == '#modal-support' ){
+                    else if (div == '#modal-support') {
                         $('.alert .alert-text p').text('Your letter has been successfully sent. The Site Adiminstration will contact you soon.');
                     }
-                    else if( div == '#modal-photo-edit'){
+                    else if (div == '#modal-photo-edit') {
                         $('.alert .alert-text p').text('Image updated.');
                     }
                     runAlert();
                 }
-                else{
+                else {
                     console.log('dont have value');
                 }
             });
 
             var deletePhoto = $(form).children('.delete-photo');
-            deletePhoto.click(function(event){
+            deletePhoto.click(function (event) {
                 event.preventDefault();
-                    closeModal();
-                    $('.alert .alert-text p').text('Image removed.');
-                    runAlert();
+                closeModal();
+                $('.alert .alert-text p').text('Image removed.');
+                runAlert();
             });
 
-            deleteAlbum.click(function(event){
+            deleteAlbum.click(function (event) {
                 event.preventDefault();
                 closeModal();
                 $('.alert .alert-text p').text('Album removed.');
                 runAlert();
             });
 
-            deleteMessage.click(function(event){
+            deleteMessage.click(function (event) {
                 event.preventDefault();
                 closeModal();
                 $('.alert .alert-text p').text('Message have been deleted.');
                 runAlert();
             });
 
-            addAvator.click(function(event){
+            addAvator.click(function (event) {
                 event.preventDefault();
                 closeModal();
                 $('.alert .alert-text p').text('Avator seved.');
                 runAlert();
             });
 
-            addImage.click(function(event){
+            addImage.click(function (event) {
                 event.preventDefault();
                 closeModal();
                 $('.alert .alert-text p').text('Image uploaded.');
@@ -174,22 +174,22 @@ var Layout = function () {
             });
 
             var addPhotoInMessage = $('#modal-gallery-files input[type="submit"]');
-            addPhotoInMessage.click(function(event){
+            addPhotoInMessage.click(function (event) {
                 event.preventDefault();
-                if($('.gallery-files input[type="checkbox"]').is(":checked")){
+                if ($('.gallery-files input[type="checkbox"]').is(":checked")) {
                     closeModal();
-                    $('.photo-box').css('display','block');
+                    $('.photo-box').css('display', 'block');
                 }
             });
         });
 
         var editAlbum = $('#edit-album .done');
         var albumName = $('#edit-album #album-title');
-        editAlbum.click(function(event){
+        editAlbum.click(function (event) {
             event.preventDefault();
-            if($(albumName).val() !== '' && $(albumName) !== undefined){
+            if ($(albumName).val() !== '' && $(albumName) !== undefined) {
                 $('.alert .alert-text p').text('Album saved.');
-                $('#edit-album').css('display','none');
+                $('#edit-album').css('display', 'none');
                 runAlert();
             }
         });
@@ -231,7 +231,9 @@ var Layout = function () {
 
     //colorbox
     var colorBox = function () {
-        $('a.photo-link').colorbox({rel: 'gal'});
+        $('a.photo-link').colorbox({
+            rel: 'gal'
+        });
         $("a.cbox").colorbox({
             current: "{current}/{total}",
             maxWidth: 600,
@@ -256,34 +258,34 @@ var Layout = function () {
     };
 
     return {
-        initFavorite : function(){
+        initFavorite: function () {
             favorite();
         },
-        initPopovers : function(){
+        initPopovers: function () {
             popovers();
         },
-        initChooseFoto : function(){
+        initChooseFoto: function () {
             chooseFoto();
         },
-        initShowSmiles : function(){
+        initShowSmiles: function () {
             showSmiles();
         },
-        initModalWindows: function(){
+        initModalWindows: function () {
             modalWindows();
         },
-        initTabWindows: function(){
+        initTabWindows: function () {
             tabWindows();
         },
-        initAddPhotoAlbum: function(){
+        initAddPhotoAlbum: function () {
             addPhotoAlbum();
         },
-        initColorBox: function(){
+        initColorBox: function () {
             colorBox();
         },
-        initTransformImg: function(){
+        initTransformImg: function () {
             transformImg();
         },
-        init: function(){
+        init: function () {
             this.initFavorite();
             this.initPopovers();
             this.initChooseFoto();
@@ -296,6 +298,89 @@ var Layout = function () {
         }
     };
 }();
+
+var Smilies = function () {
+    var smiles = function () {
+        $.emojiarea.path = 'img/smilies';
+        $.emojiarea.icons = {
+            ':m_birthday:': 'm_birthday.gif',
+            ':m_training:': 'm_training.gif',
+            ':m_rain:': 'm_rain.gif',
+            ':m_rake:': 'm_rake.gif',
+            ':m_facepalm:': 'm_facepalm.gif',
+            ':m_swim:': 'm_swim.gif',
+            ':m_newspaper:': 'm_newspaper.gif',
+            ':m_cook:': 'm_cook.gif',
+            ':m_desire:': 'm_desire.gif',
+            ':m_heat:': 'm_heat.gif',
+            ':m_shower:': 'm_shower.gif',
+            ':m_happy:': 'm_happy.gif',
+            ':m_sos:': 'm_sos.gif',
+            ':m_cleaning:': 'm_cleaning.gif',
+            ':m_gamer:': 'm_gamer.gif',
+            ':m_boat:': 'm_boat.gif',
+            ':m_fishing:': 'm_fishing.gif',
+            ':violinist:': 'violinist.gif',
+            ':victory:': 'victory.gif',
+            ':superman:': 'superman.gif',
+            ':searching:': 'searching.gif',
+            ':runner:': 'runner.gif',
+            ':reading:': 'reading.gif',
+            ':pleasantry:': 'pleasantry.gif',
+            ':playboy:': 'playboy.gif',
+            ':music:': 'music.gif',
+            ':morning:': 'morning.gif',
+            ':martini:': 'martini.gif',
+            ':man_in_love:': 'man_in_love.gif',
+            ':malesnore:': 'malesnore.gif',
+            ':m_yes:': 'm_yes.gif',
+            ':m_wink:': 'm_wink.gif',
+            ':m_smile:': 'm_smile.gif',
+            ':m_kiss:': 'm_kiss.gif',
+            ':m_happymail:': 'm_happymail.gif',
+            ':m_empathy:': 'm_empathy.gif',
+            ':m_dance:': 'm_dance.gif',
+            ':m_cray:': 'm_cray.gif',
+            ':m_blush:': 'm_blush.gif',
+            ':lazy:': 'lazy.gif',
+            ':l_turn:': 'l_turn.gif',
+            ':l_lovers:': 'l_lovers.gif',
+            ':l_kiss_hand:': 'l_kiss_hand.gif',
+            ':l_hug:': 'l_hug.gif',
+            ':hi:': 'hi.gif',
+            ':her_victory:': 'her_victory.gif',
+            ':heart:': 'heart.gif',
+            ':give_rose:': 'give_rose.gif',
+            ':give_heart:': 'give_heart.gif',
+            ':gentelman:': 'gentelman.gif',
+            ':friends:': 'friends.gif',
+            ':first_move:': 'first_move.gif',
+            ':family:': 'family.gif',
+            ':daisy:': 'daisy.gif',
+            ':cyclist:': 'cyclist.gif',
+            ':come_here:': 'come_here.gif',
+            ':bye:': 'bye.gif',
+            ':big_boss:': 'big_boss.gif',
+            ':angel:': 'angel.gif',
+            ':air_kiss:': 'air_kiss.gif',
+            ':acute:': 'acute.gif'
+        };
+
+        $('.reply_textarea textarea').emojiarea({button: '.smile-add', buttonPosition: 'before'});
+    };
+
+    return {
+        initSmiles: function () {
+            smiles();
+        },
+        init: function () {
+            this.initSmiles();
+
+        }
+    };
+}();
+
+
 
 
 

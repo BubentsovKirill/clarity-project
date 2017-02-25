@@ -20,6 +20,7 @@
     "jquery-colorbox": "colorbox#^1.6.4",
     "font-awesome": "^4.7.0",
     "bootstrap-sass": "^3.3.7",
-    "jquery-knob": "^1.2.13"
+    "jquery-knob": "^1.2.13",
+    "jquery-emojiarea": "^0.2.0"
   }
 }

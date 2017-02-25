@@ -36,7 +36,7 @@ input,textarea,select{
   font-family: Arial,Helvetica,sans-serif;
 }
 .line{
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   height:7px;
   background: url('../img/header-end-line.png') no-repeat 100% 50%,
   url('../img/header-end-line.png') no-repeat 0% 50%;
@@ -52,7 +52,7 @@ input,textarea,select{
   padding-bottom: 150px;
 }
 h1{
-  margin-top: 8px;
+  margin-top: 6px;
   margin-bottom:16px;
   font-size: 30px;
   font-weight: 400;
@@ -80,7 +80,7 @@ button[title="album-add-cancel"]{
   padding: 3px 8px 3px 8px;
 }
 .pagination {
-  margin: 35px 10px 0 20px;
+  margin: 25px 10px 0 20px;
   li {
     display: inline-block;
     font-style: italic;

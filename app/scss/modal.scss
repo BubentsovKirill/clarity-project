@@ -93,7 +93,7 @@
   @extend #modal-status;
   h2{
     font-size:2em;
-    margin-bottom:0,6em;
+    margin-bottom:0.6em;
   }
   input[type="text"]{
     border:1px solid #ccc !important;
@@ -122,6 +122,56 @@
     }
   }
 }
+#modal-conctacts-regitration{
+  @extend #modal-status;
+  .office-container{
+    display: none;
+  }
+  #office-1{
+    display: block; 
+  }
+  .contact-tab {
+    display: none;
+  }
+  .contact-tab.active {
+    display: block;
+  }
+  width:690px;
+  margin: 0 -345px;
+  select{
+    margin: 0px auto;
+    display: block;
+  }
+  ul{
+    margin-top: 20px;
+    text-align: center;
+    li{
+      display: inline-block;
+    }
+    li:nth-child(2){
+      margin: 0 40px;
+    }
+  }
+  .time{
+    table{
+      margin: 0px auto;
+      td{
+        padding: 10px 11px 12px 14px;
+      }
+    }
+  }
+  .phone{
+    p{
+      text-align: center;
+      font-size:25px;
+    }
+  }
+  .map{
+    height:400px;
+    width:100%;
+  }
+
+}
 #modal-gallery-files{
   @extend #modal-status;
   width:900px !important;
@@ -144,8 +194,7 @@
           width:160px;
           height:120px;
           padding: 2px;
-          margin: 0px auto;
-          margin-top: 10px;
+          margin: 10px auto 0px;
           background: #fff;
           -webkit-box-shadow:  1px 1px 5px rgba(0,0,0,0.4);
           -moz-box-shadow:  1px 1px 5px rgba(0,0,0,0.4);
@@ -204,7 +253,7 @@
     background: rgba(42, 45, 50, 0.9);
     img{
       padding-top: 12px;
-      margin: 0px auto;
+      margin: 0 auto;
       display: block;
     }
   }

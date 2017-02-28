@@ -1,4 +1,28 @@
 var Layout = function () {
+    //office-modal
+    var officeBlock = function () {
+        var select = $('#office-changer');
+        select.change(function () {
+            var option = $('#office-changer option:selected').val();
+            if (option === '1') {
+                $('.office-container').css('display', 'none');
+                $('#office-1').css('display', 'block');
+            }
+            else if (option === '2') {
+                $('.office-container').css('display', 'none');
+                $('#office-2').css('display', 'block');
+            }
+            else if (option === '3') {
+                $('.office-container').css('display', 'none');
+                $('#office-3').css('display', 'block');
+            }
+            else {
+                $('.office-container').css('display', 'none');
+                $('#office-4').css('display', 'block');
+            }
+        })
+    };
+
     //add and remove from favorite
     var favorite = function () {
         var link = $('#favorite');
@@ -202,11 +226,11 @@ var Layout = function () {
 
     //tabs visitors and settings
     var tabWindows = function () {
-        $('.nav-visitors, .nav-settings').each(function () {
+        $('.nav-visitors, .nav-settings, .nav-contacts').each(function () {
             $(this).find('li').each(function (i) {
                 $(this).click(function () {
                     $(this).addClass('active').siblings().removeClass('active')
-                        .closest('.visitor-tab, .settings-tab').find('.visitor-tab-item, .settings-tab-item')
+                        .closest('.visitor-tab, .settings-tab, .office-container').find('.visitor-tab-item, .settings-tab-item, .contact-tab')
                         .removeClass('active').eq(i).addClass('active');
                 });
             });
@@ -258,6 +282,9 @@ var Layout = function () {
     };
 
     return {
+        initOfficeBlock: function () {
+            officeBlock();
+        },
         initFavorite: function () {
             favorite();
         },
@@ -286,6 +313,7 @@ var Layout = function () {
             transformImg();
         },
         init: function () {
+            this.initOfficeBlock();
             this.initFavorite();
             this.initPopovers();
             this.initChooseFoto();
@@ -380,6 +408,74 @@ var Smilies = function () {
     };
 }();
 
+
+
+var Maps = function () {
+
+    var addMaps = function () {
+
+        var MapOption = function(x,y){
+           this.center =  new google.maps.LatLng(x,y);
+           this.zoom = 17;
+           this.scrollwheel = false;
+        };
+
+        var mapOption1 = new MapOption(55.656233,37.540905);
+        var mapOption2 = new MapOption(15.656233,37.540905);
+        var mapOption3 = new MapOption(35.656233,37.540905);
+        var mapOption4 = new MapOption(55.656233,37.540905);
+
+        var map1 = new google.maps.Map(document.getElementById('google-map1'), mapOption1);
+        var map2 = new google.maps.Map(document.getElementById('google-map2'), mapOption2);
+        var map3 = new google.maps.Map(document.getElementById('google-map3'), mapOption3);
+        var map4 = new google.maps.Map(document.getElementById('google-map4'), mapOption4);
+
+        var Marker = function(x,y,Id){
+            this.marker = new google.maps.Marker({
+                position :  new google.maps.LatLng(x,y),
+                map : Id,
+                visible : true,
+                icon : 'img/icon/marker.png',
+                sayHi : (function(){
+                    console.log(Id);
+                })()
+            });
+        }
+
+        var marker1 = new Marker(55.656233,37.540905, map1);
+        var marker2 = new Marker(15.656233,37.540905, map2);
+        var marker3 = new Marker(35.656233,37.540905, map3);
+        var marker4 = new Marker(55.656233,37.540905, map4);
+
+
+        $('.open-modal').click(function(){
+            setTimeout(function(){
+                //reload map
+                google.maps.event.trigger(map1,'resize');
+                console.log('riseze');
+            },500);
+        });
+
+        var select = $('#office-changer');
+        select.change(function () {
+            setTimeout(function(){
+                google.maps.event.trigger(map1,'resize');
+                google.maps.event.trigger(map2,'resize');
+                google.maps.event.trigger(map3,'resize');
+                google.maps.event.trigger(map4,'resize');
+            },500);
+        });
+
+    };
+    return {
+        initAddMaps: function () {
+            addMaps();
+        },
+        init: function () {
+            this.initAddMaps();
+        }
+    };
+}();
 
 
 
